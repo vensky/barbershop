@@ -1,1 +1,1 @@
-Учебный проект для htmlacademy
+Учебный проект для htmlacademy.ru
