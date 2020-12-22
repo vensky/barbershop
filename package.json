@@ -1,0 +1,66 @@
+{
+  "name": "Barbershop",
+  "version": "2.0.0",
+  "description": "Education project - Barbershop Borodinski",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "./node_modules/.bin/gulp",
+    "build": "NODE_ENV=build ./node_modules/.bin/gulp build",
+    "gulp": "./node_modules/.bin/gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vensky/barbershop"
+  },
+  "author": "vensky",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vensky/barbershop"
+  },
+  "homepage": "https://github.com/vensky/barbershop#readme",
+  "devDependencies": {
+    "@babel/core": "^7.11.6",
+    "@babel/preset-env": "^7.11.5",
+    "babel-register": "^6.26.0",
+    "browser-sync": "^2.26.7",
+    "del": "^6.0.0",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-babel": "^8.0.0",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-file-include": "^2.2.2",
+    "gulp-html-bem-validator": "^1.0.5",
+    "gulp-html-replace": "^1.6.2",
+    "gulp-if": "^3.0.0",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-newer": "^1.4.0",
+    "gulp-notify": "^3.2.0",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^4.1.0",
+    "gulp-terser": "^1.4.0",
+    "gulp-w3c-html-validator": "^2.0.1",
+    "husky": "^4.2.5",
+    "lint-staged": "^10.2.11",
+    "multipipe": "^4.0.0",
+    "prettier": "^2.0.5",
+    "stylelint-config-prettier": "^8.0.2",
+    "stylelint-config-recommended": "^3.0.0",
+    "stylelint-order": "^4.1.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "linters": {
+      "*.css": [
+        "prettier --write",
+        "stylelint --fix --config ./.stylelintrc-format",
+        "git add"
+      ]
+    }
+  }
+}

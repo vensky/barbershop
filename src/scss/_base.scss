@@ -1,0 +1,23 @@
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+html {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    box-sizing: border-box;
+    line-height: 1.5;
+    margin: 0;
+    scroll-behavior: smooth;
+    text-size-adjust: 100%;
+}
+
+body {
+    background: #fff;
+    font: $font-base;
+    color: #000;
+    min-width: 320px;
+    margin: 0;
+}
