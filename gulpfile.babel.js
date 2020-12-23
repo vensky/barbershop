@@ -130,8 +130,9 @@ function clean() {
 function startWatch() {
     watch(paths.watch.html).on('change', browserSync.reload);
     watch(paths.watch.scss, styles);
-    // watch([paths.watch.js, '!' + paths.watch.js + 'scripts.min.js'], scripts);
-    watch(paths.watch.js, scripts);
+    watch(paths.watch.html, html);
+    /*watch([paths.watch.js, '!' + paths.watch.js + 'scripts.min.js'], scripts);*/
+   /* watch(paths.watch.js, scripts);*/
 }
 
 exports.server = server;

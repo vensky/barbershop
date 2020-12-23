@@ -1,39 +1,15 @@
 @font-face {
-    font-family: "Fira Sans";
-    src: url("../fonts/FiraSans-Thin.woff2") format("woff2"),
-         url("../fonts/FiraSans-Thin.woff") format("woff");
-    font-weight: 100;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: "Fira Sans";
-    src: url("../fonts/FiraSans-Light.woff2") format("woff2"),
-         url("../fonts/FiraSans-Light.woff") format("woff");
-    font-weight: 300;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: "Fira Sans";
-    src: url("../fonts/FiraSans-Regular.woff2") format("woff2"),
-         url("../fonts/FiraSans-Regular.woff") format("woff");
+    font-family: "PTSansNarrow-Regular";
+    src: url("../fonts/PTSansNarrow-Regular.woff2") format("woff2"),
+         url("../fonts/PTSansNarrow-Regular.woff") format("woff");
     font-weight: 400;
     font-display: swap;
 }
 
 @font-face {
-    font-family: "Fira Sans";
-    src: url("../fonts/FiraSans-Medium.woff2") format("woff2"),
-         url("../fonts/FiraSans-Medium.woff") format("woff");
-    font-weight: 500;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: "Fira Sans";
-    src: url("../fonts/FiraSans-ExtraBold.woff2") format("woff2"),
-         url("../fonts/FiraSans-ExtraBold.woff") format("woff");
-    font-weight: 800;
+    font-family: "PTSansNarrow-Bold";
+    src: url("../fonts/PTSansNarrow-Bold.woff2") format("woff2"),
+         url("../fonts/PTSansNarrow-Bold.woff") format("woff");
+    font-weight: 700;
     font-display: swap;
 }

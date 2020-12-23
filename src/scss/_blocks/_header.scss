@@ -1,0 +1,8 @@
+.header {
+    background: #000;
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+    }
+}

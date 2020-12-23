@@ -1,0 +1,16 @@
+.sign-in {
+    &__btn {
+        @include no-btn;
+        color: #fff;
+        text-transform: uppercase;
+        padding: 27px 0;
+    }
+
+    &__icon {
+        svg {
+            height: 18px;
+            width: auto;
+            fill: #fff;
+        }
+    }
+}

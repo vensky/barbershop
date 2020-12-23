@@ -1,106 +1,100 @@
 <!DOCTYPE html>
 <html lang="ru">
-@@include('common/head.html')
-<body>
-	@@include('common/header.html')
+	@@include('common/head.html')
+	<body>
+		<div class="wrapper">
+			@@include('common/header.html')
+			<main>
+				<div class="container">
 
-		<div class="layout-center-wrapper">
-			<img class="logo" src="img/img__logo.png" alt="Логотип «Barbershop Borodinski»">
-			<ul class="features">
-				<li class="features__item">
-					<h2>Быстро</h2>
-					<p>Мы делаем свою работу быстро! Два часа пролетят незаметно и вы — счастливый обладатель стильной стрижки-минутки!</p>
-				</li>
-				<li class="features__item">
-					<h2>Круто</h2>
-					<p>Забудьте, как вы стриглись раньше. Мы сделаем из вас звезду футбола или кино! Во всяком случае внешне.</p>
-				</li>
-				<li class="features__item features__item_last">
-					<h2>Дорого</h2>
-					<p>Наши мастера — профессионалы своего дела и не могут стоить дешево. К тому же, разве цена не дает определенный статус?</p>
-				</li>
-			</ul>
-			<div class="layout-index-info__wrapper clearfix">
-				<div class="layout-index-info__letf-column">
-					<h2>Новости</h2>
-					<ul class="news__list">
-						<li>
-							<a href="#">Мы наконец завезли Ягермейстер! Теперь вы можете пропустить стаканчик во время стрижки</a><br>
-							<time datetime="2013-09-25">25 сентября</time>
+					<section class="logo">
+						<h1 class="logo__inner">
+							<span class="visuallyhidden">Barbershop Borodinski</span>
+							<img class="logo__img" src="img/img__logo.png" alt="Логотип «Barbershop Borodinski»">
+						</h1>
+					</section>
+
+					<section class="features">
+					<ul class="features__list">
+						<li class="features__item">
+							<h2 class="features__title">Быстро</h2>
+							<p>Мы&nbsp;делаем свою работу быстро! Два часа пролетят незаметно и&nbsp;вы&nbsp;&mdash; счастливый обладатель стильной стрижки-минутки!</p>
 						</li>
-						<li>
-							<a href="#">В нашей команде пополнение, Борис «Бритва» Стригунец, обладатель множества титулов и наград пополнил наши стройные ряды </a><br>
-							<time datetime="2013-09-19">19 сентября</time>
+						<li class="features__item">
+							<h2 class="features__title">Круто</h2>
+							<p>Забудьте, как вы&nbsp;стриглись раньше. Мы&nbsp;сделаем из&nbsp;вас звезду футбола или кино! Во&nbsp;всяком случае внешне.</p>
+						</li>
+						<li class="features__item features__item_last">
+							<h2 class="features__title">Дорого</h2>
+							<p>Наши мастера&nbsp;&mdash; профессионалы своего дела и&nbsp;не&nbsp;могут стоить дешево. К&nbsp;тому&nbsp;же, разве цена не&nbsp;дает определенный статус?</p>
 						</li>
 					</ul>
-					<a class="btn news__btn" href="#">Все новости</a>
-				</div>
-				<div class="layout-index-info__right-column">
-					<h2>Фотогалерея</h2>
-					<img class="gallery__slide__1" src="img/gallery__slide_1.jpg" alt="Наш интерьер - кресло">
-					<img class="gallery__slide__2" src="img/gallery__slide_1.jpg" alt="Наш интерьер - кресло">
-					<img class="gallery__slide__3" src="img/gallery__slide_1.jpg" alt="Наш интерьер - кресло">
-					<img class="gallery__slide__4" src="img/gallery__slide_1.jpg" alt="Наш интерьер - кресло">
-					<div class="gallery__paginator">
-						<a class="btn gallery__btn_prev">Назад</a>
-						<a class="btn gallery__btn_next">Вперед</a>
+					</section>
+
+					<div class="section-wrapper">
+						<section class="news">
+							<h2 class="title">Новости</h2>
+							<ul class="news__list">
+								<li>
+									<a href="news.html">Мы наконец завезли Ягермейстер! Теперь вы можете пропустить стаканчик во время стрижки</a>
+									<time datetime="2020-09-25">25 сентября</time>
+								</li>
+								<li>
+									<a href="news.html">В нашей команде пополнение, Борис «Бритва» Стригунец, обладатель множества титулов и наград пополнил наши стройные ряды </a><br>
+									<time datetime="2020-09-19">19 сентября</time>
+								</li>
+							</ul>
+							<a class="btn news__btn" href="news.html">Все новости</a>
+						</section>
+						<section class="gallery">
+							<h2 class="title">Фотогалерея</h2>
+							<img class="gallery__slide__1" src="img/gallery__slide_1.jpg" alt="Наш интерьер - кресло">
+							<div class="gallery__paginator">
+								<a class="btn gallery__btn_prev">Назад</a>
+								<a class="btn gallery__btn_next">Вперед</a>
+							</div>
+						</section>
 					</div>
-				</div>
-			</div>
-			<div class="layout-index-info__wrapper clearfix">
-				<div class="layout-index-info__letf-column">
-					<h2>Контактная информация</h2>
-					<div class="main-contacts">
-						<p><strong>«Barbershop Borodinski»</strong>
-						</p>
-						<p>Адрес: г. Москва, ул. Собаки Павлова, д. 13</p>
-						<p>Телефон: +7 (495) 666-02-666</p>
+
+					<div class="section-wrapper">
+						<section class="contacts">
+							<h2 class="title">Контактная информация</h2>
+							<div class="main-contacts">
+								<p><strong>«Barbershop Borodinski»</strong>
+								</p>
+								<p>Адрес: г. Москва, ул. Собаки Павлова, д. 13</p>
+								<p>Телефон: +7 (495) 666-02-666</p>
+							</div>
+							<div class="main-contacts">
+								<p>Время работы:</p>
+								<p>пн — пт: с 10:00 до 22:00 </p>
+								<p>сб — вс: с 10:00 до 19:00</p>
+							</div>
+							<div class="main-contacts__btn-container">
+								<a class="btn main-contacts__btn main-contacts__btn_to-map" href="#">Как проехать</a>
+								<a class="btn main-contacts__btn" href="">Обратная связь</a>
+							</div>
+						</section>
+						<section class="booking">
+							<h2 class="title">Записаться</h2>
+							<p class="booking-info">Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони</p>
+							<form>
+								<fieldset class="input__container">
+									<input type="text" id="input__date"  name="" placeholder="Дата">
+									<input type="text" name="" placeholder="Время">
+								</fieldset>
+								<fieldset class="input__container">
+									<input type="text" id="input__name"  name="" placeholder="Ваше имя">
+									<input type="text" placeholder="Телефон">
+								</fieldset>
+								<input type="submit" class="btn" value="Отправить">
+							</form>
+						</section>
 					</div>
-					<div class="main-contacts">
-						<p>Время работы:</p>
-						<p>пн — пт: с 10:00 до 22:00 </p>
-						<p>сб — вс: с 10:00 до 19:00</p>
-					</div>
-					<div class="main-contacts__btn-container">
-						<a class="btn main-contacts__btn main-contacts__btn_to-map" href="#">Как проехать</a>
-						<a class="btn main-contacts__btn" href="">Обратная связь</a>
-					</div>
+
 				</div>
-				<div class="layout-index-info__right-column">
-					<h2>Записаться</h2>
-					<p class="booking-info">Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони</p>
-					<form>
-						<fieldset class="input__container">
-							<input type="text" id="input__date"  name="" placeholder="Дата">
-							<input type="text" name="" placeholder="Время">
-						</fieldset>
-						<fieldset class="input__container">
-							<input type="text" id="input__name"  name="" placeholder="Ваше имя">
-							<input type="text" placeholder="Телефон">
-						</fieldset>
-						<input type="submit" class="btn" value="Отправить">
-					</form>
-				</div>
-			</div>
+			</main>
+		    @@include('common/footer.html')
 		</div>
-	    <footer class="main-footer clearfix">
-	        <div class="layout-center-wrapper">
-	            <div class="footer-contacts">
-	                <p><strong>Barbershop «Borodinski»</strong></p>
-	                <p>Адрес: г.Москва, ул. Собаки Павлова, д. 13</p>
-                    <p>Телефон: +7 (495) 666-02-666</p>
-	            </div>
-	            <div class="social">
-	                <h4 class="social__head">Давайте дружить!</h4>
-	                <a class="btn social__btn_vk" href="#"></a>
-	                <a class="btn social__btn_fb" href="#"></a>
-	                <a class="btn social__btn_ig" href="#"></a>
-	            </div>
-	            <div class="copyright">
-	                <span class="copyright__head">Дизайн сайта:</span>
-	                <a class="btn copyright__btn" href="http://glukhanko.ru/">Glukhanko.ru</a>
-	            </div>
-	        </div>
-	    </footer>
-</body>
+	</body>
 </html>
