@@ -28,7 +28,7 @@ const paths = {
         fonts: buildFolder + 'fonts/'
     },
     src: {
-        html: srcFolder,
+        html: srcFolder + 'html/',
         scss: srcFolder + 'scss/style.scss',
         css: srcFolder + 'css/',
         js: srcFolder + 'js/',
@@ -36,7 +36,7 @@ const paths = {
         fonts: srcFolder + 'fonts/*.{woff, woff2}'
     },
     watch: {
-        html: srcFolder + '**/*.html',
+        html: srcFolder + 'html/**/*.html',
         scss: srcFolder + 'scss/**/*.scss',
         js: srcFolder + 'js/**/*.js',
         img: srcFolder + 'img/**/*.{jpg, png, svg, webp}'
@@ -49,7 +49,7 @@ const version = Date.now();
 
 function server() {
     browserSync.init({
-        server: { baseDir: paths.src.html },
+        server: { baseDir: srcFolder },
         notify: false,
         online: true
     })
@@ -103,14 +103,16 @@ function scripts() {
 }
 
 function html() {
-    return src(`${paths.src.html}*.html`)
+    // return src(`${paths.src.html}*.html`)
+        return src(`${paths.src.html}/*.html`)
         .pipe(fileInclude())
-        .pipe(htmlValidator())
-        .pipe(bemValidator())
-        .pipe(gulpIf(isBuild, htmlReplace({
-            'css': `css/style.min.css?v=${version}`,
-            'js': `js/scripts.min.js?v=${version}`,
-        })))
+        .pipe(dest(`${srcFolder}`))
+        // .pipe(htmlValidator())
+        // .pipe(bemValidator())
+        // .pipe(gulpIf(isBuild, htmlReplace({
+        //     'css': `css/style.min.css?v=${version}`,
+        //     'js': `js/scripts.min.js?v=${version}`,
+        // })))
         .pipe(gulpIf(isBuild, dest(paths.build.html)))
 }
 
@@ -128,6 +130,7 @@ function clean() {
 function startWatch() {
     watch(paths.watch.html).on('change', browserSync.reload);
     watch(paths.watch.scss, styles);
+    // watch([paths.watch.js, '!' + paths.watch.js + 'scripts.min.js'], scripts);
     watch(paths.watch.js, scripts);
 }
 
@@ -138,7 +141,7 @@ exports.html = html;
 // exports.images = images;
 exports.clean = clean;
 
-exports.default = parallel(styles, scripts, startWatch, server);
+exports.default = parallel(html, styles, scripts, startWatch, server);
 exports.build = series(clean, html, styles, scripts);
 
 

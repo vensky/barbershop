@@ -3,14 +3,14 @@ html, body {
 	padding: 0;
 	text-transform: uppercase;
 	font: bold 14px "PT Sans Narrow", sans-serif;
-	background: #000 url("img/bg__main.jpg") no-repeat 50% 0;
+	background: #000 url("/img/bg__main.jpg") no-repeat 50% 0;
 	color: #fff;
 }
 
 .clearfix:after {
 	content:"";
 	display: table;
-	clear: both;	
+	clear: both;
 }
 
 .btn {
@@ -136,7 +136,7 @@ html, body {
 			margin-left: -15px;
 			background: #000 url("img/icon__diamond.png") no-repeat 0 0;
 		}
-		
+
 		.features__item p {
 			margin-bottom: 0;
 			line-height: 24px;
@@ -159,9 +159,9 @@ html, body {
     .layout-index-info__right-column {
     	float: right;
 		width: 296px;
-		padding-left: 90px; 
+		padding-left: 90px;
 	}
-	
+
 		.layout-index-info__wrapper h2 {
 			margin: 0;
 			font-size: 30px;
@@ -183,7 +183,7 @@ html, body {
 					text-decoration: none;
 					color: #000;
 				}
-			
+
 				.news__list time {
 					text-transform: lowercase;
 					font: italic 14px "Georgia", serif;
@@ -221,7 +221,7 @@ html, body {
 		.main-contacts {
 			margin: 28px 0 0;
 			font-style: normal;
-		}	
+		}
 			.main-contacts p {
 				margin: 0;
 				line-height: 24px;
@@ -256,7 +256,7 @@ html, body {
 				border: 2px solid #000;
 				text-transform: uppercase;
 				font: bold 14px "PT Sans Narrow", sans-serif;
-				
+
 			}
 
 				#input__date,
@@ -270,7 +270,7 @@ html, body {
 			border: none;
 		}
 
-		
+
 .main-footer {
 	margin-top: 65px;
 	padding: 62px 0 60px;
@@ -325,9 +325,9 @@ html, body {
 
 		.social__btn_ig {
 			margin-right: 0;
-			background-position: -98px -52px;	
+			background-position: -98px -52px;
 		}
-		
+
 		.social__btn_ig:hover {
 			background-position: -98px 0;
 		}
