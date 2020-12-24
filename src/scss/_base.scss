@@ -41,6 +41,8 @@ body {
     margin: 30px auto;
     position: relative;
 
+    padding: 50px 80px;
+
     &::after {
         content: "";
         background: url("/img/border-section.png") 50% 50% no-repeat;
@@ -53,7 +55,7 @@ body {
     }
 
     &__col {
-        padding: 50px 0;
+/*        padding: 50px 0;
         width: 50%;
 
         &--left {
@@ -64,7 +66,15 @@ body {
         &--right {
             padding-right: 80px;
             padding-left: 60px;
-        }
+        }*/
+        width: 50%;
+        position: relative;
+        padding-bottom: 44px;
+    }
+
+    &__btn {
+        position: absolute;
+        bottom: 0;
     }
 
 

@@ -32,7 +32,7 @@
 					</section>
 
 					<div class="section-wrapper">
-						<section class="news-section section-wrapper__col section-wrapper__col--left">
+						<section class="news-section section-wrapper__col">
 							<h2 class="title">Новости</h2>
 							<ul class="news-section__list">
 								<li>
@@ -44,12 +44,14 @@
 									<time datetime="2020-09-19">19 сентября</time>
 								</li>
 							</ul>
-							<a class="btn news__btn" href="news.html">Все новости</a>
+							<a class="btn news__btn section-wrapper__btn" href="news.html">Все новости</a>
 						</section>
-						<section class="gallery-section section-wrapper__col section-wrapper__col--right">
+						<section class="gallery-section section-wrapper__col">
 							<h2 class="title">Фотогалерея</h2>
-							<img class="gallery__slide__1" src="img/gallery__slide_1.jpg" alt="Наш интерьер - кресло">
-							<div class="gallery-section__btns">
+							<div class="gallery-section__slider">
+								<img class="gallery__slide__1" src="img/gallery__slide_1.jpg" alt="Наш интерьер - кресло">
+							</div>
+							<div class="gallery-section__btns section-wrapper__btn">
 								<a class="btn gallery-section__btn">Назад</a>
 								<a class="btn gallery-section__btn">Вперед</a>
 							</div>
@@ -57,7 +59,7 @@
 					</div>
 
 					<div class="section-wrapper">
-						<section class="contacts">
+						<section class="contacts-section section-wrapper__col">
 							<h2 class="title">Контактная информация</h2>
 							<div class="main-contacts">
 								<p><strong>«Barbershop Borodinski»</strong>
@@ -70,12 +72,12 @@
 								<p>пн — пт: с 10:00 до 22:00 </p>
 								<p>сб — вс: с 10:00 до 19:00</p>
 							</div>
-							<div class="main-contacts__btn-container">
+							<div class="main-contacts__btn-container section-wrapper__btn">
 								<a class="btn main-contacts__btn main-contacts__btn_to-map" href="#">Как проехать</a>
 								<a class="btn main-contacts__btn" href="">Обратная связь</a>
 							</div>
 						</section>
-						<section class="booking">
+						<section class="booking-section  section-wrapper__col">
 							<h2 class="title">Записаться</h2>
 							<p class="booking-info">Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони</p>
 							<form>
@@ -87,7 +89,7 @@
 									<input type="text" id="input__name"  name="" placeholder="Ваше имя">
 									<input type="text" placeholder="Телефон">
 								</fieldset>
-								<input type="submit" class="btn" value="Отправить">
+								<input type="submit" class="btn  section-wrapper__btn" value="Отправить">
 							</form>
 						</section>
 					</div>
