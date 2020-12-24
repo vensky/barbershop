@@ -1,6 +1,10 @@
 .gallery-section {
     max-width: 298px;
 
+    @media (max-width: 900px) {
+        max-width: 480px;
+    }
+
     &__slider {
         margin: 0 auto;
 
@@ -16,6 +20,10 @@
     }
 
     &__btn {
-        width: 136px;
+        max-width: 136px;
+
+        @media (max-width: 480px) {
+            width: 48%;
+        }
     }
 }

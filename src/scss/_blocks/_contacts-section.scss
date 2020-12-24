@@ -1,6 +1,10 @@
 .contacts-section {
      max-width: 330px;
 
+    @media (max-width: 900px) {
+        max-width: 480px;
+    }
+
     &__title {
         font:  $font-base;
         margin: 0;
@@ -18,9 +22,20 @@
 
     &__btns {
         display: flex;
+
+        @media (max-width: 480px) {
+            flex-direction: column;
+            align-items: center;
+        }
     }
 
     &__btn {
         margin-right: 20px;
+        margin-bottom: 20px;
+
+        @media (max-width: 480px) {
+            margin-right: 0;
+            width: 100%;
+        }
     }
 }

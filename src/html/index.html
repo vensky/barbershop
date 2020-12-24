@@ -44,7 +44,7 @@
 									<time datetime="2020-09-19">19 сентября</time>
 								</li>
 							</ul>
-							<a class="btn news__btn section-wrapper__btn" href="news.html">Все новости</a>
+							<a class="btn news-section__btn section-wrapper__btn" href="news.html">Все новости</a>
 						</section>
 						<section class="gallery-section section-wrapper__col">
 							<h2 class="title">Фотогалерея</h2>
@@ -81,12 +81,12 @@
 							<p class="booking-info">Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони</p>
 							<form class="form booking-section__form">
 								<fieldset class="form__group booking-section__group">
-									<input class="form__field" type="text"placeholder="Дата">
-									<input class="form__field" type="text" name="" placeholder="Время">
+									<input class="form__field booking-section__field" type="text"placeholder="Дата">
+									<input class="form__field booking-section__field" type="text" name="" placeholder="Время">
 								</fieldset>
 								<fieldset class="form__group booking-section__group">
-									<input class="form__field" type="text"placeholder="Ваше имя">
-									<input class="form__field" type="tel" placeholder="Телефон">
+									<input class="form__field booking-section__field" type="text"placeholder="Ваше имя">
+									<input class="form__field booking-section__field" type="tel" placeholder="Телефон">
 								</fieldset>
 								<button class="btn booking-section__btn section-wrapper__btn" type="button">Отправить</button>
 							</form>
@@ -95,6 +95,7 @@
 				</div>
 			</main>
 		    @@include('common/footer.html')
+		    @@include('common/modal-sign-in.html')
 		</div>
 	</body>
 </html>

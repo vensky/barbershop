@@ -4,6 +4,7 @@
     }
 
     &__field {
+        display: block;
         width: 140px;
         height: 40px;
         padding: 0 10px;
@@ -13,6 +14,18 @@
 
         &::placeholder {
             color: #000;
+        }
+    }
+
+    &__link {
+        @include no-btn;
+        text-transform: uppercase;
+        box-shadow: 0 2px 0 0 #000;
+        text-align: center;
+        transition: box-shadow 0.25s ease-out 0s;
+
+        &:hover {
+            box-shadow: 0 2px 0 0 transparent;
         }
     }
 }

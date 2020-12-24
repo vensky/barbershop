@@ -16,3 +16,41 @@
         color: #000;
     }
 }
+
+.btn-close {
+    @include no-btn;
+    display: block;
+    width: 20px;
+    height: 20px;
+    position: relative;
+
+    &::before {
+        content: "";
+        display: block;
+        width: 23px;
+        height: 4px;
+        background: #000;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        margin-top: -2px;
+        transform: rotate(45deg);
+    }
+
+    &::after {
+        content: "";
+        display: block;
+        width: 23px;
+        height: 4px;
+        background: #000;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        margin-top: -2px;
+        transform: rotate(-45deg);
+    }
+
+    span {
+        display: none;
+    }
+}
