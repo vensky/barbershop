@@ -39,7 +39,6 @@ body {
     background: #fff url("/img/bg-section.png");
     display: flex;
     margin: 30px auto;
-    padding: 50px 80px;
     position: relative;
 
     &::after {
@@ -52,4 +51,21 @@ body {
         height: 80%;
         width: 8px;
     }
+
+    &__col {
+        padding: 50px 0;
+        width: 50%;
+
+        &--left {
+            padding-right: 60px;
+            padding-left: 80px;
+        }
+
+        &--right {
+            padding-right: 80px;
+            padding-left: 60px;
+        }
+    }
+
+
 }

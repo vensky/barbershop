@@ -7,12 +7,15 @@
 
 @import "_normalize-custom";
 @import "_base";
-/*@import "_typography";*/
+@import "_typography";
 
+@import "_components/_btn";
 @import "_components/_login";
 
 @import "_blocks/_header";
 @import "_blocks/_nav";
 @import "_blocks/_logo";
 @import "_blocks/_features";
+@import "_blocks/_news-section";
+@import "_blocks/_gallery-section";
 
