@@ -1,7 +1,9 @@
 .news-section {
-    margin-right: 60px;
+    max-width: 330px;
 
     &__list {
+        @include no-list;
+
         li {
             margin: 28px 0;
         }

@@ -1,14 +1,13 @@
 .btn {
-    display: block;
+    @include no-btn;
     height: 44px;
     line-height: 44px;
     padding: 0 10px;
     width: 140px;
     text-align: center;
-    text-decoration: none;
     background: #000;
     color: #fff;
-    cursor: pointer;
+    text-transform: uppercase;
     transition: color 0.25s ease-out 0s,
                 background 0.25s ease-out 0s;
 

@@ -40,7 +40,7 @@ body {
     display: flex;
     margin: 30px auto;
     position: relative;
-
+    justify-content: space-between;
     padding: 50px 80px;
 
     &::after {
@@ -55,18 +55,6 @@ body {
     }
 
     &__col {
-/*        padding: 50px 0;
-        width: 50%;
-
-        &--left {
-            padding-right: 60px;
-            padding-left: 80px;
-        }
-
-        &--right {
-            padding-right: 80px;
-            padding-left: 60px;
-        }*/
         width: 50%;
         position: relative;
         padding-bottom: 44px;
@@ -76,6 +64,4 @@ body {
         position: absolute;
         bottom: 0;
     }
-
-
 }

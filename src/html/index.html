@@ -15,20 +15,20 @@
 					</section>
 
 					<section class="features">
-					<ul class="features__list">
-						<li class="features__item">
-							<h2 class="features__title">Быстро</h2>
-							<p>Мы&nbsp;делаем свою работу быстро! Два часа пролетят незаметно и&nbsp;вы&nbsp;&mdash; счастливый обладатель стильной стрижки-минутки!</p>
-						</li>
-						<li class="features__item">
-							<h2 class="features__title">Круто</h2>
-							<p>Забудьте, как вы&nbsp;стриглись раньше. Мы&nbsp;сделаем из&nbsp;вас звезду футбола или кино! Во&nbsp;всяком случае внешне.</p>
-						</li>
-						<li class="features__item features__item_last">
-							<h2 class="features__title">Дорого</h2>
-							<p>Наши мастера&nbsp;&mdash; профессионалы своего дела и&nbsp;не&nbsp;могут стоить дешево. К&nbsp;тому&nbsp;же, разве цена не&nbsp;дает определенный статус?</p>
-						</li>
-					</ul>
+						<ul class="features__list">
+							<li class="features__item">
+								<h2 class="features__title">Быстро</h2>
+								<p>Мы&nbsp;делаем свою работу быстро! Два часа пролетят незаметно и&nbsp;вы&nbsp;&mdash; счастливый обладатель стильной стрижки-минутки!</p>
+							</li>
+							<li class="features__item">
+								<h2 class="features__title">Круто</h2>
+								<p>Забудьте, как вы&nbsp;стриглись раньше. Мы&nbsp;сделаем из&nbsp;вас звезду футбола или кино! Во&nbsp;всяком случае внешне.</p>
+							</li>
+							<li class="features__item features__item_last">
+								<h2 class="features__title">Дорого</h2>
+								<p>Наши мастера&nbsp;&mdash; профессионалы своего дела и&nbsp;не&nbsp;могут стоить дешево. К&nbsp;тому&nbsp;же, разве цена не&nbsp;дает определенный статус?</p>
+							</li>
+						</ul>
 					</section>
 
 					<div class="section-wrapper">
@@ -61,39 +61,37 @@
 					<div class="section-wrapper">
 						<section class="contacts-section section-wrapper__col">
 							<h2 class="title">Контактная информация</h2>
-							<div class="main-contacts">
-								<p><strong>«Barbershop Borodinski»</strong>
-								</p>
-								<p>Адрес: г. Москва, ул. Собаки Павлова, д. 13</p>
-								<p>Телефон: +7 (495) 666-02-666</p>
-							</div>
-							<div class="main-contacts">
-								<p>Время работы:</p>
-								<p>пн — пт: с 10:00 до 22:00 </p>
-								<p>сб — вс: с 10:00 до 19:00</p>
-							</div>
-							<div class="main-contacts__btn-container section-wrapper__btn">
-								<a class="btn main-contacts__btn main-contacts__btn_to-map" href="#">Как проехать</a>
-								<a class="btn main-contacts__btn" href="">Обратная связь</a>
+							<h3 class="contacts-section__title">&laquo;Barbershop Borodinski&raquo;</h3>
+							<ul class="contacts-section__list">
+								<li>Адрес: г.&nbsp;Москва, ул.&nbsp;Собаки Павлова, д.&nbsp;13</li>
+								<li>Телефон: <a href="tel:+749566602666">+7 (495) 666-02-666</a></li>
+							</ul>
+							<p class="contacts-section__title">Время работы:</p>
+							<ul class="contacts-section__list">
+								<li>Пн&nbsp;&mdash; Пт: с&nbsp;10:00 до&nbsp;22:00</li>
+								<li>Сб&nbsp;&mdash; Вс: с&nbsp;10:00 до&nbsp;19:00</li>
+							</ul>
+							<div class="contacts-section__btns section-wrapper__btn">
+								<a class="btn contacts-section__btn" href="contacts.html">Как проехать</a>
+								<a class="btn contacts-section__btn" href="contacts.html#feedback">Обратная связь</a>
 							</div>
 						</section>
-						<section class="booking-section  section-wrapper__col">
+						<section class="booking-section section-wrapper__col">
 							<h2 class="title">Записаться</h2>
 							<p class="booking-info">Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони</p>
-							<form>
-								<fieldset class="input__container">
-									<input type="text" id="input__date"  name="" placeholder="Дата">
-									<input type="text" name="" placeholder="Время">
+							<form class="form booking-section__form">
+								<fieldset class="form__group booking-section__group">
+									<input class="form__field" type="text"placeholder="Дата">
+									<input class="form__field" type="text" name="" placeholder="Время">
 								</fieldset>
-								<fieldset class="input__container">
-									<input type="text" id="input__name"  name="" placeholder="Ваше имя">
-									<input type="text" placeholder="Телефон">
+								<fieldset class="form__group booking-section__group">
+									<input class="form__field" type="text"placeholder="Ваше имя">
+									<input class="form__field" type="tel" placeholder="Телефон">
 								</fieldset>
-								<input type="submit" class="btn  section-wrapper__btn" value="Отправить">
+								<button class="btn booking-section__btn section-wrapper__btn" type="button">Отправить</button>
 							</form>
 						</section>
 					</div>
-
 				</div>
 			</main>
 		    @@include('common/footer.html')
