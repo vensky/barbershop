@@ -1,6 +1,10 @@
 .news-section {
     max-width: 330px;
 
+    @media (max-width: 900px) {
+        max-width: 480px;
+    }
+
     &__list {
         @include no-list;
 
@@ -19,5 +23,11 @@
         display: block;
         font: 400 14px $font-family-base;
         text-transform: none;
+    }
+
+    &__btn {
+        @media (max-width: 480px) {
+            width: 100%;
+        }
     }
 }

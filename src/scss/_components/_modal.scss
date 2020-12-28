@@ -1,0 +1,52 @@
+.overlay {
+    background: rgba(0, 0, 0, 0.75);
+/*    display: none;*/
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 10;
+}
+
+.modal {
+    background: #f7f4f1 url("/img/bg-section.png");
+    position: fixed;
+    max-width: 460px;
+    padding: 55px 80px;
+    top: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 11;
+
+    &__container {
+        max-width: 300px;
+    }
+
+    &__group {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__field {
+        margin-bottom: 20px;
+        width: 100%;
+    }
+
+    &__btn {
+        width: 100%;
+        margin: 20px auto;
+    }
+
+    &__btn-close {
+        position: absolute;
+        top: 20px;
+        right: 15px;
+    }
+
+    &__link {
+        display: block;
+        margin: 0 auto;
+    }
+}
+

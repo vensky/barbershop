@@ -3,12 +3,21 @@
         @include no-list;
         display: flex;
         justify-content: space-around;
+
+        @media (max-width: 640px) {
+            flex-direction: column;
+            align-items: center;
+        }
     }
 
     &__item {
         color: #f7f4f1;
         text-align: center;
         max-width: 280px;
+
+        @media (min-width: 641px) and (max-width: 1024px) {
+            max-width: 200px;
+        }
     }
 
     &__title {

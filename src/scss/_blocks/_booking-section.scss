@@ -1,10 +1,31 @@
 .booking-section {
     max-width: 298px;
 
+    @media (max-width: 900px) {
+        max-width: 480px;
+    }
+
     &__group {
         display: flex;
         justify-content: space-between;
-        margin: 20px 0;
+       /* margin: 20px 0;*/
+
+        @media (max-width: 480px) {
+            flex-direction: column;
+        }
+    }
+
+    &__field {
+        margin-bottom: 20px;
+
+        @media (max-width: 900px) {
+            width: 48%;
+        }
+
+        @media (max-width: 480px) {
+            flex-direction: column;
+            width: 100%;
+        }
     }
 
     &__btn {

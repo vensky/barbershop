@@ -2,6 +2,8 @@
 <html lang="ru">
 	<head>
 	<meta charset="utf-8">
+    <meta name="google" content="notranslate">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Главная «Barbershop Borodinski»</title>
 	<link rel="stylesheet" href="css/style.css">
 </head>
@@ -71,7 +73,7 @@
 									<time datetime="2020-09-19">19 сентября</time>
 								</li>
 							</ul>
-							<a class="btn news__btn section-wrapper__btn" href="news.html">Все новости</a>
+							<a class="btn news-section__btn section-wrapper__btn" href="news.html">Все новости</a>
 						</section>
 						<section class="gallery-section section-wrapper__col">
 							<h2 class="title">Фотогалерея</h2>
@@ -108,12 +110,12 @@
 							<p class="booking-info">Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони</p>
 							<form class="form booking-section__form">
 								<fieldset class="form__group booking-section__group">
-									<input class="form__field" type="text"placeholder="Дата">
-									<input class="form__field" type="text" name="" placeholder="Время">
+									<input class="form__field booking-section__field" type="text"placeholder="Дата">
+									<input class="form__field booking-section__field" type="text" name="" placeholder="Время">
 								</fieldset>
 								<fieldset class="form__group booking-section__group">
-									<input class="form__field" type="text"placeholder="Ваше имя">
-									<input class="form__field" type="tel" placeholder="Телефон">
+									<input class="form__field booking-section__field" type="text"placeholder="Ваше имя">
+									<input class="form__field booking-section__field" type="tel" placeholder="Телефон">
 								</fieldset>
 								<button class="btn booking-section__btn section-wrapper__btn" type="button">Отправить</button>
 							</form>
@@ -123,7 +125,7 @@
 			</main>
 		    <footer class="footer">
     <div class="container footer__container">
-        <div class="contacts-section">
+        <div class="contacts-section footer__contacts-section">
             <h3 class="contacts-section__title">&laquo;Barbershop Borodinski&raquo;</h3>
             <ul class="contacts-section__list">
                 <li>Адрес: г.&nbsp;Москва, ул.&nbsp;Собаки Павлова, д.&nbsp;13</li>
@@ -164,6 +166,26 @@
     </div>
 </footer>
 
+
+		    <div class="modal">
+    <div class="container">
+        <h2 class="title">Личный кабинет</h2>
+        <form class="form" method="" action="">
+            <p>Введите, пожалуйста, свой логин и пароль</p>
+            <input class="form__field modal__field" type="text" palceholder="Логин">
+            <input class="form__field modal__field" type="password" palceholder="Пароль">
+            <fieldset class="form__group modal__group">
+                <input class="form__checkbox" name="remember" type="checkbox">
+                <label class="form__label" for="remember">Запомнить меня</label>
+                <button class="form__link" type="button">Я забыл пароль!</button>
+            </fieldset>
+            <button class="btn modal__btn" type="button">Войти</button>
+            <button class="form__link modal__link" type="button">Зарегистрироваться</button>
+        </form>
+    </div>
+    <button class="btn-close modal__btn-close" type="button"><span>Закрыть</span></button>
+</div>
+<div class="overlay"></div>
 
 		</div>
 	</body>
