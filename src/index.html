@@ -16,11 +16,11 @@
 		<nav class="nav">
 			<ul class="nav__list">
 				<li><a class="nav__link nav__link--active" href="#">Главная</a></li>
-				<li><a class="nav__link" href="#">Информация</a></li>
-				<li><a class="nav__link" href="#">Новости</a></li>
-				<li><a class="nav__link" href="pricelist.html">Прайс-лист</a></li>
+				<li><a class="nav__link" href="about.html">Информация</a></li>
+				<li><a class="nav__link" href="news.html">Новости</a></li>
+				<li><a class="nav__link" href="price.html">Прайс-лист</a></li>
 				<li><a class="nav__link" href="shop.html">Магазин</a></li>
-				<li><a class="nav__link" href="#">Контакты</a></li>
+				<li><a class="nav__link" href="contacts.html">Контакты</a></li>
 			</ul>
 		</nav>
 		<div class="sign-in">
@@ -168,7 +168,9 @@
 </footer>
 
 
-		    <div class="modal hidden" id="modal-sign-in">
+		</div>
+		<div class="overlay"></div>
+		<div class="modal hidden" id="modal-sign-in">
     <div class="container">
         <h2 class="title modal__title">Личный кабинет</h2>
         <form class="form" method="" action="">
@@ -188,9 +190,8 @@
     </div>
     <button class="btn-close modal__btn-close" type="button"><span>Закрыть</span></button>
 </div>
-<div class="overlay hidden"></div>
 
-		    <div class="modal hidden" id="modal-sign-up">
+		<div class="modal hidden" id="modal-sign-up">
     <div class="container">
         <h2 class="title modal__title">Регистрация</h2>
         <form class="form" method="" action="">
@@ -204,9 +205,8 @@
     </div>
     <button class="btn-close modal__btn-close" type="button"><span>Закрыть</span></button>
 </div>
-<div class="overlay hidden"></div>
 
-		    <div class="modal" id="modal-repair">
+		<div class="modal" id="modal-repair">
     <div class="container">
         <h2 class="title modal__title">Восстановление пароля</h2>
         <form class="form" method="" action="">
@@ -219,8 +219,7 @@
     </div>
     <button class="btn-close modal__btn-close" type="button"><span>Закрыть</span></button>
 </div>
-<div class="overlay"></div>
 
-		</div>
+		<script src="js/scripts.min.js"></script>
 	</body>
 </html>
