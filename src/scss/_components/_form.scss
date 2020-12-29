@@ -15,17 +15,55 @@
         &::placeholder {
             color: #000;
         }
+
+        &--login {
+            background: url("/img/icon-login.svg") no-repeat 98% 50%;
+            padding-right: 28px;
+        }
+
+        &--password {
+            background: url("/img/icon-password.svg") no-repeat 98% 50%;
+            padding-right: 28px;
+        }
+    }
+
+    &__checkbox {
+        input[type="checkbox"] {
+            @include visuallyhidden;
+
+            &:checked + label::before {
+                background-image: url("/img/icon-check.svg");
+            }
+        }
+
+        label {
+            display: flex;
+            cursor: pointer;
+
+            &::before {
+                content: "";
+                background: transparent no-repeat 50% 50%;
+                display: block;
+                height: 20px;
+                width: 20px;
+                border: 2px solid #000;
+                margin-right: 10px;
+            }
+        }
     }
 
     &__link {
         @include no-btn;
+        display: block;
+        line-height: 1em;
         text-transform: uppercase;
-        box-shadow: 0 2px 0 0 #000;
+        border-bottom: 2px solid #000;
+        height: 16px;
         text-align: center;
-        transition: box-shadow 0.25s ease-out 0s;
+        transition: border-bottom-color 0.25s ease-out 0s;
 
         &:hover {
-            box-shadow: 0 2px 0 0 transparent;
+            border-bottom-color: transparent;
         }
     }
 }

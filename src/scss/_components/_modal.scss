@@ -12,20 +12,55 @@
 .modal {
     background: #f7f4f1 url("/img/bg-section.png");
     position: fixed;
-    max-width: 460px;
+    width: 460px;
     padding: 55px 80px;
     top: 80px;
     left: 50%;
     transform: translateX(-50%);
     z-index: 11;
 
+    @media (max-width: 500px), (max-height: 500px) {
+        padding: 20px 30px;
+        top: 0;
+        left: 0;
+        right: 0;
+        transform: translateX(0);
+        position: absolute;
+        min-height: 100%;
+        width: 100%;
+    }
+
     &__container {
         max-width: 300px;
+    }
+
+    &__title {
+        @media (max-width: 500px), (max-height: 500px) {
+            margin-bottom: 0px;
+        };
     }
 
     &__group {
         display: flex;
         justify-content: space-between;
+        align-items: center;
+
+        @media (max-width: 400px) {
+            flex-direction: column;
+            align-items: start;
+        }
+
+        .form__checkbox {
+            @media (max-width: 400px) {
+                margin-bottom: 20px;
+            }
+        }
+
+        .form__link {
+            @media (max-width: 400px) {
+                margin: 0 auto;
+            }
+        }
     }
 
     &__field {
@@ -45,8 +80,7 @@
     }
 
     &__link {
-        display: block;
-        margin: 0 auto;
+        margin: 0 auto 12px;
     }
 }
 
