@@ -116,12 +116,12 @@ function html() {
         .pipe(gulpIf(isBuild, dest(paths.build.html)))
 }
 
-// function images() {
-//     return src(`${paths.img}/**/*`)
-//     .pipe(newer(`${paths.dist}/img`))
-//     .pipe(imagemin())
-//     .pipe(dest(`${paths.dist}/img`))
-// }
+function images() {
+    return src(`${paths.img}/**/*`)
+    .pipe(newer(`${paths.dist}/img`))
+    .pipe(imagemin())
+    .pipe(dest(`${paths.dist}/img`))
+}
 
 function clean() {
     return del(paths.clean);
@@ -131,8 +131,7 @@ function startWatch() {
     watch(paths.watch.html).on('change', browserSync.reload);
     watch(paths.watch.scss, styles);
     watch(paths.watch.html, html);
-    watch([paths.watch.js, '!' + paths.watch.js + 'scripts.min.js'], scripts);
-   /* watch(paths.watch.js, scripts);*/
+    watch([paths.watch.js, `!${paths.src.js}scripts.min.js`], scripts);
 }
 
 exports.server = server;
