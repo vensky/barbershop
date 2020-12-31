@@ -1,4 +1,1 @@
-'use strict';
-function(){
-let="";
-}
+@@include('modals_new.js')

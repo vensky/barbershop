@@ -103,7 +103,6 @@ function scripts() {
 }
 
 function html() {
-    // return src(`${paths.src.html}*.html`)
         return src(`${paths.src.html}/*.html`)
         .pipe(fileInclude())
         .pipe(dest(`${srcFolder}`))

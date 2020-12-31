@@ -1,30 +1,46 @@
 .overlay {
     background: rgba(0, 0, 0, 0.75);
-/*    display: none;*/
+    opacity: 0;
+    visibility: hidden;
+
     position: fixed;
     top: 0;
     left: 0;
     bottom: 0;
     right: 0;
     z-index: 10;
+    transition: opacity 0.3s ease-out 0s,
+                visibility 0.3s ease-out 0s;
+
+    &--active {
+        opacity: 1;
+        visibility: visible;
+    }
 }
 
 .modal {
     background: #f7f4f1 url("/img/bg-section.png");
     position: fixed;
+    max-width: 460px;
     width: 460px;
     padding: 55px 80px;
     top: 80px;
     left: 50%;
     transform: translateX(-50%);
     z-index: 11;
+    transition: opacity 0.3s ease-out 0s,
+                visibility 0.3s ease-out 0s;
+    opacity: 0;
+    visibility: hidden;
+
+    &--active {
+        opacity: 1;
+        visibility: visible;
+    }
 
     @media (max-width: 500px), (max-height: 500px) {
         padding: 20px 30px;
         top: 0;
-        left: 0;
-        right: 0;
-        transform: translateX(0);
         position: absolute;
         min-height: 100%;
         width: 100%;

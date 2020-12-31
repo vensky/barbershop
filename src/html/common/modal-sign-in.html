@@ -1,4 +1,4 @@
-<div class="modal hidden" id="modal-sign-in">
+<div class="modal" id="modal-sign-in">
     <div class="container">
         <h2 class="title modal__title">Личный кабинет</h2>
         <form class="form" method="" action="">
@@ -10,11 +10,11 @@
                     <input id="remember-me" type="checkbox">
                     <label class="form__label" for="remember-me">Запомнить меня</label>
                 </div>
-                <button class="form__link" type="button">Я забыл пароль!</button>
+                <button class="form__link js-modalOpen" type="button" data-modal="modal-repair">Я забыл пароль!</button>
             </fieldset>
             <button class="btn modal__btn" type="button">Войти</button>
-            <button class="form__link modal__link" type="button">Зарегистрироваться</button>
+            <button class="form__link modal__link js-modalOpen" type="button" data-modal="modal-sign-up">Зарегистрироваться</button>
         </form>
     </div>
-    <button class="btn-close modal__btn-close" type="button"><span>Закрыть</span></button>
+    <button class="btn-close modal__btn-close js-modalClose" type="button"><span>Закрыть</span></button>
 </div>

@@ -1,4 +1,4 @@
-<div class="modal hidden" id="modal-sign-up">
+<div class="modal" id="modal-sign-up">
     <div class="container">
         <h2 class="title modal__title">Регистрация</h2>
         <form class="form" method="" action="">
@@ -7,8 +7,8 @@
             <input class="form__field modal__field form__field--password" type="password" palceholder="Пароль">
             <input class="form__field modal__field form__field--password" type="password" palceholder="Пароль">
             <button class="btn modal__btn" type="button">Зарегистрироваться</button>
-            <button class="form__link modal__link" type="button">Войти</button>
+            <button class="form__link modal__link js-modalOpen" type="button" data-modal="modal-sign-in">Войти</button>
         </form>
     </div>
-    <button class="btn-close modal__btn-close" type="button"><span>Закрыть</span></button>
+    <button class="btn-close modal__btn-close js-modalClose" type="button"><span>Закрыть</span></button>
 </div>

@@ -24,7 +24,7 @@
 			</ul>
 		</nav>
 		<div class="sign-in">
-			<button class="sign-in__btn" type="button">
+			<button class="sign-in__btn js-modalOpen" type="button" data-modal="modal-sign-in">
 				<span class="sign-in__icon">
 					<svg width="18px" viewBox="0 0 385 385" xmlns="http://www.w3.org/2000/svg"><path d="m372.939 0h-168.424c-6.641 0-12.03 5.39-12.03 12.03s5.39 12.03 12.03 12.03h156.394v336.848h-156.394c-6.641 0-12.03 5.39-12.03 12.03s5.39 12.03 12.03 12.03h168.424c6.641 0 12.03-5.39 12.03-12.03v-360.908c.001-6.64-5.389-12.03-12.03-12.03z"/><path d="m197.213 268.276c-4.704 4.752-4.704 12.439 0 17.179 4.704 4.752 12.319 4.752 17.011 0l82.997-84.2c4.632-4.68 4.68-12.512 0-17.191l-83.009-84.2c-4.704-4.752-12.319-4.74-17.011 0-4.704 4.74-4.704 12.439 0 17.179l62.558 63.46h-247.729c-6.64 0-12.03 5.437-12.03 12.15s5.39 12.151 12.03 12.151h247.74z"/></svg>
 				</span>
@@ -170,7 +170,7 @@
 
 		</div>
 		<div class="overlay"></div>
-		<div class="modal hidden" id="modal-sign-in">
+		<div class="modal" id="modal-sign-in">
     <div class="container">
         <h2 class="title modal__title">Личный кабинет</h2>
         <form class="form" method="" action="">
@@ -182,16 +182,16 @@
                     <input id="remember-me" type="checkbox">
                     <label class="form__label" for="remember-me">Запомнить меня</label>
                 </div>
-                <button class="form__link" type="button">Я забыл пароль!</button>
+                <button class="form__link js-modalOpen" type="button" data-modal="modal-repair">Я забыл пароль!</button>
             </fieldset>
             <button class="btn modal__btn" type="button">Войти</button>
-            <button class="form__link modal__link" type="button">Зарегистрироваться</button>
+            <button class="form__link modal__link js-modalOpen" type="button" data-modal="modal-sign-up">Зарегистрироваться</button>
         </form>
     </div>
-    <button class="btn-close modal__btn-close" type="button"><span>Закрыть</span></button>
+    <button class="btn-close modal__btn-close js-modalClose" type="button"><span>Закрыть</span></button>
 </div>
 
-		<div class="modal hidden" id="modal-sign-up">
+		<div class="modal" id="modal-sign-up">
     <div class="container">
         <h2 class="title modal__title">Регистрация</h2>
         <form class="form" method="" action="">
@@ -200,10 +200,10 @@
             <input class="form__field modal__field form__field--password" type="password" palceholder="Пароль">
             <input class="form__field modal__field form__field--password" type="password" palceholder="Пароль">
             <button class="btn modal__btn" type="button">Зарегистрироваться</button>
-            <button class="form__link modal__link" type="button">Войти</button>
+            <button class="form__link modal__link js-modalOpen" type="button" data-modal="modal-sign-in">Войти</button>
         </form>
     </div>
-    <button class="btn-close modal__btn-close" type="button"><span>Закрыть</span></button>
+    <button class="btn-close modal__btn-close js-modalClose" type="button"><span>Закрыть</span></button>
 </div>
 
 		<div class="modal" id="modal-repair">
@@ -213,11 +213,11 @@
             <p>Введите, пожалуйста, свой логин или эл.почту</p>
             <input class="form__field modal__field form__field--login" type="text" palceholder="Логин">
             <button class="btn modal__btn" type="button">Восстановить</button>
-            <button class="form__link modal__link" type="button">Войти</button>
-            <button class="form__link modal__link" type="button">Зарегистрироваться</button>
+            <button class="form__link modal__link js-modalOpen" type="button" data-modal="modal-sign-in">Войти</button>
+            <button class="form__link modal__link js-modalOpen" type="button" data-modal="modal-sign-up">Зарегистрироваться</button>
         </form>
     </div>
-    <button class="btn-close modal__btn-close" type="button"><span>Закрыть</span></button>
+    <button class="btn-close modal__btn-close js-modalClose" type="button"><span>Закрыть</span></button>
 </div>
 
 		<script src="js/scripts.min.js"></script>
