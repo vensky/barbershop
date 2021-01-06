@@ -5,7 +5,7 @@
     <title>Barbershop Borodinski Москва ✄ Мужские стрижки. Парикмахерская.</title>
     <meta name="google" content="notranslate">
     <!-- Mobile -->
-    <meta content="width=device-width, initial-scale=1, user-scalable=yes, minimum-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes, minimum-scale=1.0">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <!-- Style -->
 	<link rel="stylesheet" href="css/style.css">
@@ -29,7 +29,8 @@
 			<header class="header">
 	<div class="container header__container">
 		<nav class="nav">
-			<ul class="nav__list">
+			<button class="nav__btn js-navToggle" type="button"><span>Меню</span></button>
+			<ul class="nav__list js-navList">
 				<li><a class="nav__link nav__link--active" href="#">Главная</a></li>
 				<li><a class="nav__link" href="about.html">Информация</a></li>
 				<li><a class="nav__link" href="news.html">Новости</a></li>
@@ -93,12 +94,24 @@
 						</section>
 						<section class="gallery-section section-wrapper__col">
 							<h2 class="title">Фотогалерея</h2>
-							<div class="gallery-section__slider">
-								<img class="gallery__slide__1" src="img/gallery__slide_1.jpg" alt="Наш интерьер - кресло">
+							<div class="swiper-container">
+								<div class="swiper-wrapper">
+									<div class="gallery-section__slider swiper-slide">
+										<img class="gallery__slide__1" src="img/gallery__slide_1.jpg" alt="Наш интерьер - кресло">
+									</div>
+									<div class="gallery-section__slider swiper-slide">
+										<img class="gallery__slide__1" src="img/img__01.jpg" alt="Товар">
+									</div>
+									<div class="gallery-section__slider swiper-slide">
+										<img class="gallery__slide__1" src="img/img__02.jpg" alt="Товар">
+									</div>
+								</div>
+
 							</div>
+
 							<div class="gallery-section__btns section-wrapper__btn">
-								<a class="btn gallery-section__btn">Назад</a>
-								<a class="btn gallery-section__btn">Вперед</a>
+								<a class="btn gallery-section__btn swiper-button-prev">Назад</a>
+								<a class="btn gallery-section__btn swiper-button-next">Вперед</a>
 							</div>
 						</section>
 					</div>
@@ -109,7 +122,7 @@
 							<h3 class="contacts-section__title">&laquo;Barbershop Borodinski&raquo;</h3>
 							<ul class="contacts-section__list">
 								<li>Адрес: г.&nbsp;Москва, ул.&nbsp;Собаки Павлова, д.&nbsp;13</li>
-								<li>Телефон: <a href="tel:+749566602666">+7 (495) 666-02-666</a></li>
+								<li>Телефон: <a href="tel:+749566602666" title="Позвонить">+7 (495) 666-02-666</a></li>
 							</ul>
 							<p class="contacts-section__title">Время работы:</p>
 							<ul class="contacts-section__list">
@@ -145,7 +158,7 @@
             <h3 class="contacts-section__title">&laquo;Barbershop Borodinski&raquo;</h3>
             <ul class="contacts-section__list">
                 <li>Адрес: г.&nbsp;Москва, ул.&nbsp;Собаки Павлова, д.&nbsp;13</li>
-                <li>Телефон: <a href="tel:+749566602666">+7 (495) 666-02-666</a></li>
+                <li>Телефон: <a href="tel:+749566602666" title="Позвонить">+7 (495) 666-02-666</a></li>
             </ul>
         </div>
 

@@ -7,9 +7,11 @@
 
     &__slider {
         margin: 0 auto;
+        text-align: center;
 
         img {
-            width: 100%;
+            height: 100%;
+            width: auto;
         }
     }
 
