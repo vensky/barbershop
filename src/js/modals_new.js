@@ -12,7 +12,6 @@ document.addEventListener('DOMContentLoaded', function() {
             let modalElem = document.querySelector(`#${modalId}`);
             let modalActive = document.querySelectorAll('.modal');
 
-
             modalActive.forEach(function(item) {
                 item.classList.remove('modal--active');
             });
