@@ -63,6 +63,7 @@
 
     &__btn {
         @include no-btn;
+        display: none;
         height: 24px;
         width: 30px;
         position: absolute;
@@ -70,7 +71,10 @@
         left: 0;
         transform: translateY(-50%);
         font-size: 0;
-        // background: red;
+
+        @media (max-width: 720px) {
+            display: block;
+        }
 
         &::before,
         &::after {
