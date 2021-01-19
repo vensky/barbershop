@@ -42,6 +42,7 @@
     "gulp-terser": "^1.4.0",
     "gulp-w3c-html-validator": "^2.0.1",
     "husky": "^4.2.5",
+    "imask": "^6.0.5",
     "lint-staged": "^10.2.11",
     "multipipe": "^4.0.0",
     "prettier": "^2.0.5",
