@@ -51,13 +51,13 @@
 							<div class="swiper-container">
 								<div class="swiper-wrapper">
 									<div class="gallery-section__slider swiper-slide">
-										<img class="gallery__slide__1" src="img/gallery__slide_1.jpg" alt="Наш интерьер - кресло">
+										<img class="gallery-section__slide" src="img/gallery__slide_1.jpg" alt="Наш интерьер - кресло">
 									</div>
 									<div class="gallery-section__slider swiper-slide">
-										<img class="gallery__slide__1" src="img/img__01.jpg" alt="Товар">
+										<img class="gallery-section__slide" src="img/img__01.jpg" alt="Товар">
 									</div>
 									<div class="gallery-section__slider swiper-slide">
-										<img class="gallery__slide__1" src="img/img__02.jpg" alt="Товар">
+										<img class="gallery-section__slide" src="img/img__02.jpg" alt="Товар">
 									</div>
 								</div>
 
@@ -83,8 +83,8 @@
 							</ul>
 							<p class="contacts-section__title">Время работы:</p>
 							<ul class="contacts-section__list">
-								<li><time itemprop="openingHours" datetime="Mn-Fr 10:00−22:00">Пн&nbsp;&mdash; Пт: с&nbsp;10:00 до&nbsp;22:00</time></li>
-								<li><time itemprop="openingHours" datetime="Sa,Su 10:00−19:00">Сб&nbsp;&mdash; Вс: с&nbsp;10:00 до&nbsp;19:00</time></li>
+								<li><span itemprop="openingHours">Пн&nbsp;&mdash; Пт: с&nbsp;10:00 до&nbsp;22:00</span></li>
+								<li><span itemprop="openingHours">Сб&nbsp;&mdash; Вс: с&nbsp;10:00 до&nbsp;19:00</span></li>
 							</ul>
 							<div class="contacts-section__btns section-wrapper__btn">
 								<a class="btn contacts-section__btn" href="contacts.html">Как проехать</a>
@@ -94,14 +94,14 @@
 						<section class="booking-section section-wrapper__col">
 							<h2 class="title">Записаться</h2>
 							<p class="booking-info">Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони</p>
-							<form class="form booking-section__form">
+							<form class="form booking-section__form" method="post">
 								<fieldset class="form__group booking-section__group">
-									<input class="form__field booking-section__field js-dateMask" type="text" placeholder="Дата">
-									<input class="form__field booking-section__field js-timeMask" type="text" name="" placeholder="Время">
+									<input class="form__field booking-section__field js-dateMask" type="text" name="booking-date" placeholder="Дата">
+									<input class="form__field booking-section__field js-timeMask" type="text" name="booking-time" placeholder="Время">
 								</fieldset>
 								<fieldset class="form__group booking-section__group">
-									<input class="form__field booking-section__field" type="text" placeholder="Ваше имя">
-									<input class="form__field booking-section__field js-telMask" type="tel" placeholder="Телефон">
+									<input class="form__field booking-section__field" type="text" name="booking-name" placeholder="Ваше имя">
+									<input class="form__field booking-section__field js-telMask" type="tel" name="booking-tel" placeholder="Телефон">
 								</fieldset>
 								<button class="btn booking-section__btn section-wrapper__btn" type="button">Отправить</button>
 							</form>

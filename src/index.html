@@ -107,13 +107,13 @@
 							<div class="swiper-container">
 								<div class="swiper-wrapper">
 									<div class="gallery-section__slider swiper-slide">
-										<img class="gallery__slide__1" src="img/gallery__slide_1.jpg" alt="Наш интерьер - кресло">
+										<img class="gallery-section__slide" src="img/gallery__slide_1.jpg" alt="Наш интерьер - кресло">
 									</div>
 									<div class="gallery-section__slider swiper-slide">
-										<img class="gallery__slide__1" src="img/img__01.jpg" alt="Товар">
+										<img class="gallery-section__slide" src="img/img__01.jpg" alt="Товар">
 									</div>
 									<div class="gallery-section__slider swiper-slide">
-										<img class="gallery__slide__1" src="img/img__02.jpg" alt="Товар">
+										<img class="gallery-section__slide" src="img/img__02.jpg" alt="Товар">
 									</div>
 								</div>
 
@@ -139,8 +139,8 @@
 							</ul>
 							<p class="contacts-section__title">Время работы:</p>
 							<ul class="contacts-section__list">
-								<li><time itemprop="openingHours" datetime="Mn-Fr 10:00−22:00">Пн&nbsp;&mdash; Пт: с&nbsp;10:00 до&nbsp;22:00</time></li>
-								<li><time itemprop="openingHours" datetime="Sa,Su 10:00−19:00">Сб&nbsp;&mdash; Вс: с&nbsp;10:00 до&nbsp;19:00</time></li>
+								<li><span itemprop="openingHours">Пн&nbsp;&mdash; Пт: с&nbsp;10:00 до&nbsp;22:00</span></li>
+								<li><span itemprop="openingHours">Сб&nbsp;&mdash; Вс: с&nbsp;10:00 до&nbsp;19:00</span></li>
 							</ul>
 							<div class="contacts-section__btns section-wrapper__btn">
 								<a class="btn contacts-section__btn" href="contacts.html">Как проехать</a>
@@ -150,14 +150,14 @@
 						<section class="booking-section section-wrapper__col">
 							<h2 class="title">Записаться</h2>
 							<p class="booking-info">Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони</p>
-							<form class="form booking-section__form">
+							<form class="form booking-section__form" method="post">
 								<fieldset class="form__group booking-section__group">
-									<input class="form__field booking-section__field js-dateMask" type="text" placeholder="Дата">
-									<input class="form__field booking-section__field js-timeMask" type="text" name="" placeholder="Время">
+									<input class="form__field booking-section__field js-dateMask" type="text" name="booking-date" placeholder="Дата">
+									<input class="form__field booking-section__field js-timeMask" type="text" name="booking-time" placeholder="Время">
 								</fieldset>
 								<fieldset class="form__group booking-section__group">
-									<input class="form__field booking-section__field" type="text" placeholder="Ваше имя">
-									<input class="form__field booking-section__field js-telMask" type="tel" placeholder="Телефон">
+									<input class="form__field booking-section__field" type="text" name="booking-name" placeholder="Ваше имя">
+									<input class="form__field booking-section__field js-telMask" type="tel" name="booking-tel" placeholder="Телефон">
 								</fieldset>
 								<button class="btn booking-section__btn section-wrapper__btn" type="button">Отправить</button>
 							</form>
@@ -181,7 +181,7 @@
                 <li>
                     <a class="btn social__btn social__btn--vk" href="#">
                         <svg class="social__icon" xmlns="http://www.w3.org/2000/svg" height="14px"><path d="M10.684 12.948h1.261s.381-.041.576-.251c.179-.193.173-.555.173-.555s-.025-1.711.761-1.96c.774-.246 1.769 1.636 2.823 2.359.797.547 1.402.406 1.402.406l2.818.003s1.474-.112.775-1.271c-.057-.094-.407-.856-2.095-2.424-1.768-1.64-1.531-1.374.598-4.211 1.296-1.729 1.814-3.222 1.653-3.673-.155-.43-1.101-.356-1.101-.356l-3.18-.001s-.235-.023-.41.082c-.17.102-.28.366-.28.366s-.502 1.8-1.172 2.938c-1.413 2.399-1.978 2.526-2.209 2.377-.538-.348-.403-1.395-.403-2.139 0-2.325.353-3.295-.687-3.546-.345-.083-.599-.139-1.481-.147-1.132-.012-2.09.003-2.632.269-.361.177-.64.571-.47.594.21.028.685.128.937.471.324.441.313 1.434.313 1.434s.187 2.737-.437 3.077c-.427.233-1.014-.243-2.274-2.419-.646-1.116-1.133-2.81-1.133-2.81s-.094-.23-.261-.354c-.203-.148-.487-.196-.487-.196l-3.016.002s-.453.012-.619.209c-.147.175-.011.537-.011.537s2.361 6.003 5.034 8.786c2.45 2.552 5.234 2.403 5.234 2.403z"/></svg>
-                        <span>vk.com<span>
+                        <span>vk.com</span>
                     </a>
                 </li>
                 <li>
@@ -192,7 +192,7 @@
                     </a>
                 </li>
                 <li>
-                     <a class="btn social__btn social__btn--ig" href="#">
+                    <a class="btn social__btn social__btn--ig" href="#">
                         <svg class="social__icon social__icon--instagram" xmlns="http://www.w3.org/2000/svg" height="14px" viewBox="0 0 24 24"><path d="M12,2.2c3.2,0,3.6,0,4.9,0.1c3.3,0.1,4.8,1.7,4.9,4.9c0.1,1.3,0.1,1.6,0.1,4.8c0,3.2,0,3.6-0.1,4.8c-0.1,3.2-1.7,4.8-4.9,4.9c-1.3,0.1-1.6,0.1-4.9,0.1c-3.2,0-3.6,0-4.8-0.1c-3.3-0.1-4.8-1.7-4.9-4.9c-0.1-1.3-0.1-1.6-0.1-4.8c0-3.2,0-3.6,0.1-4.8c0.1-3.2,1.7-4.8,4.9-4.9C8.4,2.2,8.8,2.2,12,2.2z M12,0C8.7,0,8.3,0,7.1,0.1c-4.4,0.2-6.8,2.6-7,7C0,8.3,0,8.7,0,12s0,3.7,0.1,4.9c0.2,4.4,2.6,6.8,7,7C8.3,24,8.7,24,12,24s3.7,0,4.9-0.1c4.4-0.2,6.8-2.6,7-7C24,15.7,24,15.3,24,12s0-3.7-0.1-4.9c-0.2-4.4-2.6-6.8-7-7C15.7,0,15.3,0,12,0z M12,5.8c-3.4,0-6.2,2.8-6.2,6.2s2.8,6.2,6.2,6.2s6.2-2.8,6.2-6.2C18.2,8.6,15.4,5.8,12,5.8z M12,16c-2.2,0-4-1.8-4-4c0-2.2,1.8-4,4-4s4,1.8,4,4C16,14.2,14.2,16,12,16z M18.4,4.2c-0.8,0-1.4,0.6-1.4,1.4S17.6,7,18.4,7c0.8,0,1.4-0.6,1.4-1.4S19.2,4.2,18.4,4.2z"/>
                         </svg>
                         <span>instagram.com</span>
@@ -214,13 +214,13 @@
 		<div class="modal" id="modal-sign-in">
     <div class="container">
         <h2 class="title modal__title">Личный кабинет</h2>
-        <form class="form" method="" action="">
+        <form class="form" method="post">
             <p>Введите, пожалуйста, свой логин и пароль</p>
-            <input class="form__field modal__field form__field--login" type="text" palceholder="Логин">
-            <input class="form__field modal__field form__field--password" type="password" palceholder="Пароль">
+            <input class="form__field modal__field form__field--login" type="text" name="sign-in-login" placeholder="Логин">
+            <input class="form__field modal__field form__field--password" type="password" name="sign-in-password" placeholder="Пароль">
             <fieldset class="form__group modal__group">
                 <div class="form__checkbox">
-                    <input id="remember-me" type="checkbox">
+                    <input id="remember-me" type="checkbox" name="sign-in-remember">
                     <label class="form__label" for="remember-me">Запомнить меня</label>
                 </div>
                 <button class="form__link js-modalOpen" type="button" data-modal="modal-repair">Я забыл пароль!</button>
@@ -235,11 +235,11 @@
 		<div class="modal" id="modal-sign-up">
     <div class="container">
         <h2 class="title modal__title">Регистрация</h2>
-        <form class="form" method="" action="">
+        <form class="form" method="post">
             <p>Придумайте, пожалуйста, свой логин и пароль с подтверждением</p>
-            <input class="form__field modal__field form__field--login" type="text" palceholder="Логин">
-            <input class="form__field modal__field form__field--password" type="password" palceholder="Пароль">
-            <input class="form__field modal__field form__field--password" type="password" palceholder="Пароль">
+            <input class="form__field modal__field form__field--login" type="text" name="sign-up-login" placeholder="Логин">
+            <input class="form__field modal__field form__field--password" type="password" name="sign-up-password" placeholder="Пароль">
+            <input class="form__field modal__field form__field--password" type="password" name="sign-up-password" placeholder="Пароль">
             <button class="btn modal__btn" type="button">Зарегистрироваться</button>
             <button class="form__link modal__link js-modalOpen" type="button" data-modal="modal-sign-in">Войти</button>
         </form>
@@ -250,9 +250,9 @@
 		<div class="modal" id="modal-repair">
     <div class="container">
         <h2 class="title modal__title">Восстановление пароля</h2>
-        <form class="form" method="" action="">
+        <form class="form" method="post">
             <p>Введите, пожалуйста, свой логин или эл.почту</p>
-            <input class="form__field modal__field form__field--login" type="text" palceholder="Логин">
+            <input class="form__field modal__field form__field--login" type="text" name="repair-login" placeholder="Логин">
             <button class="btn modal__btn" type="button">Восстановить</button>
             <button class="form__link modal__link js-modalOpen" type="button" data-modal="modal-sign-in">Войти</button>
             <button class="form__link modal__link js-modalOpen" type="button" data-modal="modal-sign-up">Зарегистрироваться</button>

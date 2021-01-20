@@ -1,11 +1,11 @@
 <div class="modal" id="modal-sign-up">
     <div class="container">
         <h2 class="title modal__title">Регистрация</h2>
-        <form class="form" method="" action="">
+        <form class="form" method="post">
             <p>Придумайте, пожалуйста, свой логин и пароль с подтверждением</p>
-            <input class="form__field modal__field form__field--login" type="text" palceholder="Логин">
-            <input class="form__field modal__field form__field--password" type="password" palceholder="Пароль">
-            <input class="form__field modal__field form__field--password" type="password" palceholder="Пароль">
+            <input class="form__field modal__field form__field--login" type="text" name="sign-up-login" placeholder="Логин">
+            <input class="form__field modal__field form__field--password" type="password" name="sign-up-password" placeholder="Пароль">
+            <input class="form__field modal__field form__field--password" type="password" name="sign-up-password" placeholder="Пароль">
             <button class="btn modal__btn" type="button">Зарегистрироваться</button>
             <button class="form__link modal__link js-modalOpen" type="button" data-modal="modal-sign-in">Войти</button>
         </form>

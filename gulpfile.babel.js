@@ -108,10 +108,10 @@ function html() {
         .pipe(dest(`${srcFolder}`))
         // .pipe(htmlValidator())
         // .pipe(bemValidator())
-        // .pipe(gulpIf(isBuild, htmlReplace({
-        //     'css': `css/style.min.css?v=${version}`,
-        //     'js': `js/scripts.min.js?v=${version}`,
-        // })))
+        .pipe(gulpIf(isBuild, htmlReplace({
+            'css': `css/style.min.css?v=${version}`,
+            'js': `js/scripts.min.js?v=${version}`,
+        })))
         .pipe(gulpIf(isBuild, dest(paths.build.html)))
 }
 
