@@ -5,6 +5,12 @@
         max-width: 480px;
     }
 
+    &__form {
+        display: flex;
+        flex-flow: column nowrap;
+        flex: auto;
+    }
+
     &__group {
         display: flex;
         justify-content: space-between;
@@ -29,6 +35,7 @@
     }
 
     &__btn {
+        margin-top: auto;
         width: 100%;
     }
 }

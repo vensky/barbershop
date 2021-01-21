@@ -106,7 +106,7 @@ function html() {
         return src(`${paths.src.html}/*.html`)
         .pipe(fileInclude())
         .pipe(dest(`${srcFolder}`))
-        // .pipe(htmlValidator())
+        .pipe(htmlValidator())
         // .pipe(bemValidator())
         .pipe(gulpIf(isBuild, htmlReplace({
             'css': `css/style.min.css?v=${version}`,

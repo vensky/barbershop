@@ -1,4 +1,6 @@
 .sign-in {
+    margin-left: auto;
+
     &__btn {
         @include no-btn;
         color: #fff;

@@ -41,7 +41,7 @@ body {
     margin: 30px auto;
     position: relative;
     justify-content: space-between;
-    padding: 50px 80px;
+    padding: 36px 80px;
 
     @media (max-width: 900px) {
         align-items: center;
@@ -72,8 +72,8 @@ body {
 
     &__col {
         width: 50%;
-        position: relative;
-        padding-bottom: 44px;
+        display: flex;
+        flex-flow: column nowrap;
 
         @media (max-width: 900px) {
             margin-bottom: 80px;
@@ -87,8 +87,7 @@ body {
     }
 
     &__btn {
-        position: absolute;
-        bottom: 0;
+        margin-top: auto;
 
         @media (max-width: 480px) {
             position: relative;

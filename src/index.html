@@ -104,21 +104,21 @@
 						</section>
 						<section class="gallery-section section-wrapper__col">
 							<h2 class="title">Фотогалерея</h2>
-							<div class="swiper-container">
-								<div class="swiper-wrapper">
-									<div class="gallery-section__slider swiper-slide">
-										<img class="gallery-section__slide" src="img/gallery__slide_1.jpg" alt="Наш интерьер - кресло">
-									</div>
-									<div class="gallery-section__slider swiper-slide">
-										<img class="gallery-section__slide" src="img/img__01.jpg" alt="Товар">
-									</div>
-									<div class="gallery-section__slider swiper-slide">
-										<img class="gallery-section__slide" src="img/img__02.jpg" alt="Товар">
+							<div class="gallery-section__swiper-wrapper">
+								<div class="swiper-container">
+									<div class="swiper-wrapper">
+										<div class="gallery-section__slider swiper-slide">
+											<img class="gallery-section__slide" src="assets/gallery__slide_1.jpg" alt="Наш интерьер - кресло">
+										</div>
+										<div class="gallery-section__slider swiper-slide">
+											<img class="gallery-section__slide" src="assets/img__01.jpg" alt="Товар">
+										</div>
+										<div class="gallery-section__slider swiper-slide">
+											<img class="gallery-section__slide" src="assets/img__02.jpg" alt="Товар">
+										</div>
 									</div>
 								</div>
-
 							</div>
-
 							<div class="gallery-section__btns section-wrapper__btn">
 								<a class="btn gallery-section__btn swiper-button-prev">Назад</a>
 								<a class="btn gallery-section__btn swiper-button-next">Вперед</a>
@@ -129,19 +129,23 @@
 					<div class="section-wrapper">
 						<section class="contacts-section section-wrapper__col" itemscope itemtype="http://schema.org/HairSalon">
 							<h2 class="title">Контактная информация</h2>
-							<h3 class="contacts-section__title" itemprop="name">&laquo;Barbershop Borodinski&raquo;</h3>
-							<ul class="contacts-section__list" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
-								<li>Адрес:
-									<span itemprop="addressLocality">г.&nbsp;Москва</span>,
-									<span itemprop="streetAddress">ул.&nbsp;Собаки Павлова, д.&nbsp;13</span>
-								</li>
-								<li>Телефон: <a href="tel:+749566602666" title="Позвонить"><span  itemprop="telephone">+7 (495) 666-02-666</span></a></li>
-							</ul>
-							<p class="contacts-section__title">Время работы:</p>
-							<ul class="contacts-section__list">
-								<li><span itemprop="openingHours">Пн&nbsp;&mdash; Пт: с&nbsp;10:00 до&nbsp;22:00</span></li>
-								<li><span itemprop="openingHours">Сб&nbsp;&mdash; Вс: с&nbsp;10:00 до&nbsp;19:00</span></li>
-							</ul>
+							<div class="contacts-section__section">
+								<h3 class="contacts-section__title" itemprop="name">&laquo;Barbershop Borodinski&raquo;</h3>
+								<ul class="contacts-section__list" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+									<li>Адрес:
+										<span itemprop="addressLocality">г.&nbsp;Москва</span>,
+										<span itemprop="streetAddress">ул.&nbsp;Собаки Павлова, д.&nbsp;13</span>
+									</li>
+									<li>Телефон: <a href="tel:+749566602666" title="Позвонить"><span  itemprop="telephone">+7 (495) 666-02-666</span></a></li>
+								</ul>
+							</div>
+							<div class="contacts-section__section">
+								<p class="contacts-section__title">Время работы:</p>
+								<ul class="contacts-section__list">
+									<li><span itemprop="openingHours">Пн&nbsp;&mdash; Пт: с&nbsp;10:00 до&nbsp;22:00</span></li>
+									<li><span itemprop="openingHours">Сб&nbsp;&mdash; Вс: с&nbsp;10:00 до&nbsp;19:00</span></li>
+								</ul>
+							</div>
 							<div class="contacts-section__btns section-wrapper__btn">
 								<a class="btn contacts-section__btn" href="contacts.html">Как проехать</a>
 								<a class="btn contacts-section__btn" href="contacts.html#feedback">Обратная связь</a>

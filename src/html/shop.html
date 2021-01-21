@@ -1,12 +1,6 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Barbershop Borodinski — Магазин</title>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <link rel="stylesheet" href="css/style_index.css">
-        <link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow:700&subset=cyrillic,latin' rel='stylesheet' type='text/css'>
-    </head>
+<html lang="ru" prefix="og: http://ogp.me/ns#">
+    @@include('common/head.html')
     <body>
         @@include('common/header.html')
         <div class="layout-center-wrapper">
@@ -14,34 +8,34 @@
             <ul class="breadcrumbs">
                 <li><a class="breadcrumbs__link" href="#">Главная</a></li>
                 <li><a class="breadcrumbs__link" href="#">Магазин</a></li>
-                <li><a class="breadcrumbs__link breadcrumbs__link_current" rel="#">Средства для ухода</a></li>
+                <li><a class="breadcrumbs__link breadcrumbs__link_current" href="#">Средства для ухода</a></li>
             </ul>
             <div class="layout-left-column">
                 <div class="option">
                     <h2 class="option__title">Производители</h2>
                     <form action="#" method="post" class="option__checkboxes">
                         <fieldset>
-                            <input type="checkbox" name="" id="baxter-of-california" checked>
+                            <input type="checkbox" name="baxter-of-california" id="baxter-of-california" checked>
                             <label class="checkbox__label" for="baxter-of-california">Baxter of California</label>
                         </fieldset>
                         <fieldset>
-                            <input type="checkbox" name="" id="mr-natty">
+                            <input type="checkbox" name="mr-natty" id="mr-natty">
                             <label class="checkbox__label" for="mr-natty">Mr Natty</label>
                         </fieldset>
                         <fieldset>
-                            <input type="checkbox" name="" id="suavecito" checked>
+                            <input type="checkbox" name="suavecito" id="suavecito" checked>
                             <label class="checkbox__label" for="suavecito">Suavecito</label>
                         </fieldset>
                         <fieldset>
-                            <input type="checkbox" name="" id="malin-goetz">
+                            <input type="checkbox" name="malin-goetz" id="malin-goetz">
                             <label class="checkbox__label" for="malin-goetz">Malin+Goetz</label>
                         </fieldset>
                         <fieldset>
-                            <input type="checkbox" name="" id="murrays">
+                            <input type="checkbox" name="murrays" id="murrays">
                             <label class="checkbox__label" for="murrays">Murray's</label>
                         </fieldset>
                         <fieldset>
-                            <input type="checkbox" name="" id="american-crew" checked>
+                            <input type="checkbox" name="american-crew" id="american-crew" checked>
                             <label class="checkbox__label" for="american-crew">American Crew</label>
                         </fieldset>
                     </form>
