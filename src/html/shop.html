@@ -2,7 +2,10 @@
 <html lang="ru" prefix="og: http://ogp.me/ns#">
     @@include('common/head.html')
     <body>
-        @@include('common/header.html')
+        <div class="wrapper">
+            @@include('common/header.html')
+            <main>
+                <div class="container">
         <div class="layout-center-wrapper">
             <h1 class="page-header">Barbershop Borodinski — Магазин</h1>
             <ul class="breadcrumbs">
@@ -94,26 +97,14 @@
                 </div>
             </div>
         </div>
-        <footer class="main-footer clearfix">
-            <div class="layout-center-wrapper">
-                <div class="contacts">
-                    <h4 class="contacts__head"><strong>Barbershop «Borodinski»</strong></h4>
-                    <address class="contacts__info">
-                        <span>Адрес: г.Москва, ул. Собаки Павлова, д. 13</span><br>
-                        <span>Телефон: +7 (495) 666-02-666</span>
-                    </address>
                 </div>
-                <div class="social">
-                    <h4 class="social__head">Давайте дружить!</h4>
-                    <a class="btn social__btn_vk" href="#"></a>
-                    <a class="btn social__btn_fb" href="#"></a>
-                    <a class="btn social__btn_ig" href="#"></a>
-                </div>
-                <div class="copyright">
-                    <span class="copyright__head">Дизайн сайта:</span>
-                    <a class="btn copyright__btn" href="http://glukhanko.ru/">Glukhanko.ru</a>
-                </div>
-            </div>
-        </footer>
+            </main>
+            @@include('common/footer.html')
+        </div>
+        <div class="overlay"></div>
+        @@include('common/modal-sign-in.html')
+        @@include('common/modal-sign-up.html')
+        @@include('common/modal-repair.html')
+        <script src="js/scripts.min.js"></script>
     </body>
 </html>
