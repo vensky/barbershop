@@ -8,7 +8,6 @@
         @media (max-width: 720px) {
             display: none;
             flex-direction: column;
-            position: absolute;
             top: 78px;
             left: -20px;
             padding-left: 20px;
@@ -17,11 +16,10 @@
             width: 200px;
             line-height: 14px;
             z-index: 5;
-
         }
 
         &--show {
-            display: block;
+            display: flex;
         }
 
         li {
