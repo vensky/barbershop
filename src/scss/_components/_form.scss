@@ -17,12 +17,12 @@
         }
 
         &--login {
-            background: url("/img/icon-login.svg") no-repeat 98% 50%;
+            background: url("../img/dist/icons/icon-login.svg") no-repeat 98% 50%;
             padding-right: 28px;
         }
 
         &--password {
-            background: url("/img/icon-password.svg") no-repeat 98% 50%;
+            background: url("../img/dist/icons/icon-password.svg") no-repeat 98% 50%;
             padding-right: 28px;
         }
     }
@@ -31,8 +31,8 @@
         input[type="checkbox"] {
             @include visuallyhidden;
 
-            &:checked + label::before {
-                background-image: url("/img/icon-check.svg");
+            &:checked+label::before {
+                background-image: url("../img/dist/icons/icon-check.svg");
             }
         }
 

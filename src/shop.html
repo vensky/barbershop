@@ -36,29 +36,30 @@
     <body>
         <div class="wrapper">
             <header class="header">
-	<div class="container header__container">
-		<nav class="nav">
-			<button class="nav__btn js-navToggle" type="button"><span>Меню</span></button>
-			<ul class="nav__list js-navList">
-				<li><a class="nav__link nav__link--active" href="#">Главная</a></li>
-				<li><a class="nav__link" href="about.html">Информация</a></li>
-				<li><a class="nav__link" href="news.html">Новости</a></li>
-				<li><a class="nav__link" href="price.html">Прайс-лист</a></li>
-				<li><a class="nav__link" href="shop.html">Магазин</a></li>
-				<li><a class="nav__link" href="contacts.html">Контакты</a></li>
-			</ul>
-		</nav>
-		<div class="sign-in">
-			<button class="sign-in__btn js-modalOpen" type="button" data-modal="modal-sign-in">
-				<span class="sign-in__icon">
-					<svg width="18px" viewBox="0 0 385 385" xmlns="http://www.w3.org/2000/svg"><path d="m372.939 0h-168.424c-6.641 0-12.03 5.39-12.03 12.03s5.39 12.03 12.03 12.03h156.394v336.848h-156.394c-6.641 0-12.03 5.39-12.03 12.03s5.39 12.03 12.03 12.03h168.424c6.641 0 12.03-5.39 12.03-12.03v-360.908c.001-6.64-5.389-12.03-12.03-12.03z"/><path d="m197.213 268.276c-4.704 4.752-4.704 12.439 0 17.179 4.704 4.752 12.319 4.752 17.011 0l82.997-84.2c4.632-4.68 4.68-12.512 0-17.191l-83.009-84.2c-4.704-4.752-12.319-4.74-17.011 0-4.704 4.74-4.704 12.439 0 17.179l62.558 63.46h-247.729c-6.64 0-12.03 5.437-12.03 12.15s5.39 12.151 12.03 12.151h247.74z"/></svg>
-				</span>
-				<span>Вход</span>
-			</button>
-		</div>
-	</div>
+    <div class="container header__container">
+        <nav class="nav">
+            <button class="nav__btn js-navToggle" type="button"><span>Меню</span></button>
+            <ul class="nav__list js-navList">
+                <li><a class="nav__link nav__link--active" href="#">Главная</a></li>
+                <li><a class="nav__link" href="about.html">Информация</a></li>
+                <li><a class="nav__link" href="news.html">Новости</a></li>
+                <li><a class="nav__link" href="price.html">Прайс-лист</a></li>
+                <li><a class="nav__link" href="shop.html">Магазин</a></li>
+                <li><a class="nav__link" href="contacts.html">Контакты</a></li>
+            </ul>
+        </nav>
+        <div class="sign-in">
+            <button class="sign-in__btn js-modalOpen" type="button" data-modal="modal-sign-in">
+                <span class="sign-in__icon">
+                    <svg>
+                        <use xlink:href="#icon-sign-in"></use>
+                    </svg>
+                </span>
+                <span>Вход</span>
+            </button>
+        </div>
+    </div>
 </header>
-
             <main>
                 <div class="container">
         <div class="layout-center-wrapper">
@@ -163,41 +164,41 @@
                 <li>Телефон: <a href="tel:+749566602666" title="Позвонить">+7 (495) 666-02-666</a></li>
             </ul>
         </div>
-
         <div class="social">
             <h3 class="social__title">Давайте дружить!</h3>
             <ul class="social__btns">
                 <li>
-                    <a class="btn social__btn social__btn--vk" href="#">
-                        <svg class="social__icon" xmlns="http://www.w3.org/2000/svg" height="14px"><path d="M10.684 12.948h1.261s.381-.041.576-.251c.179-.193.173-.555.173-.555s-.025-1.711.761-1.96c.774-.246 1.769 1.636 2.823 2.359.797.547 1.402.406 1.402.406l2.818.003s1.474-.112.775-1.271c-.057-.094-.407-.856-2.095-2.424-1.768-1.64-1.531-1.374.598-4.211 1.296-1.729 1.814-3.222 1.653-3.673-.155-.43-1.101-.356-1.101-.356l-3.18-.001s-.235-.023-.41.082c-.17.102-.28.366-.28.366s-.502 1.8-1.172 2.938c-1.413 2.399-1.978 2.526-2.209 2.377-.538-.348-.403-1.395-.403-2.139 0-2.325.353-3.295-.687-3.546-.345-.083-.599-.139-1.481-.147-1.132-.012-2.09.003-2.632.269-.361.177-.64.571-.47.594.21.028.685.128.937.471.324.441.313 1.434.313 1.434s.187 2.737-.437 3.077c-.427.233-1.014-.243-2.274-2.419-.646-1.116-1.133-2.81-1.133-2.81s-.094-.23-.261-.354c-.203-.148-.487-.196-.487-.196l-3.016.002s-.453.012-.619.209c-.147.175-.011.537-.011.537s2.361 6.003 5.034 8.786c2.45 2.552 5.234 2.403 5.234 2.403z"/></svg>
+                    <a class="btn social__btn" href="#">
+                        <svg class="social__icon social__icon--vkontakte">
+                            <use xlink:href="#icon-vkontakte"></use>
+                        </svg>
                         <span>vk.com</span>
                     </a>
                 </li>
                 <li>
-                    <a class="btn social__btn social__btn--fb" href="#">
-                        <svg class="social__icon social__icon--facebook" xmlns="http://www.w3.org/2000/svg" height="14px" viewBox="0 0 150 150"><path d="M89.584 155.139V84.378h23.742l3.562-27.585H89.584V39.184c0-7.984 2.208-13.425 13.67-13.425l14.595-.006V1.08C115.325.752 106.661 0 96.577 0 75.52 0 61.104 12.853 61.104 36.452v20.341H37.29v27.585h23.814v70.761h28.48z"/>
+                    <a class="btn social__btn" href="#">
+                        <svg class="social__icon social__icon--facebook">
+                            <use xlink:href="#icon-facebook"></use>
                         </svg>
                         <span>facebook.com</span>
                     </a>
                 </li>
                 <li>
-                    <a class="btn social__btn social__btn--ig" href="#">
-                        <svg class="social__icon social__icon--instagram" xmlns="http://www.w3.org/2000/svg" height="14px" viewBox="0 0 24 24"><path d="M12,2.2c3.2,0,3.6,0,4.9,0.1c3.3,0.1,4.8,1.7,4.9,4.9c0.1,1.3,0.1,1.6,0.1,4.8c0,3.2,0,3.6-0.1,4.8c-0.1,3.2-1.7,4.8-4.9,4.9c-1.3,0.1-1.6,0.1-4.9,0.1c-3.2,0-3.6,0-4.8-0.1c-3.3-0.1-4.8-1.7-4.9-4.9c-0.1-1.3-0.1-1.6-0.1-4.8c0-3.2,0-3.6,0.1-4.8c0.1-3.2,1.7-4.8,4.9-4.9C8.4,2.2,8.8,2.2,12,2.2z M12,0C8.7,0,8.3,0,7.1,0.1c-4.4,0.2-6.8,2.6-7,7C0,8.3,0,8.7,0,12s0,3.7,0.1,4.9c0.2,4.4,2.6,6.8,7,7C8.3,24,8.7,24,12,24s3.7,0,4.9-0.1c4.4-0.2,6.8-2.6,7-7C24,15.7,24,15.3,24,12s0-3.7-0.1-4.9c-0.2-4.4-2.6-6.8-7-7C15.7,0,15.3,0,12,0z M12,5.8c-3.4,0-6.2,2.8-6.2,6.2s2.8,6.2,6.2,6.2s6.2-2.8,6.2-6.2C18.2,8.6,15.4,5.8,12,5.8z M12,16c-2.2,0-4-1.8-4-4c0-2.2,1.8-4,4-4s4,1.8,4,4C16,14.2,14.2,16,12,16z M18.4,4.2c-0.8,0-1.4,0.6-1.4,1.4S17.6,7,18.4,7c0.8,0,1.4-0.6,1.4-1.4S19.2,4.2,18.4,4.2z"/>
+                    <a class="btn social__btn" href="#">
+                        <svg class="social__icon social__icon--instagram">
+                            <use xlink:href="#icon-instagram"></use>
                         </svg>
                         <span>instagram.com</span>
                     </a>
                 </li>
             </ul>
         </div>
-
         <div class="copyright">
             <h3 class="copyright__title">Дизайн сайта:</h3>
             <a class="btn copyright__btn" href="http://glukhanko.ru/">Glukhanko.ru</a>
         </div>
     </div>
 </footer>
-
-
         </div>
         <div class="overlay"></div>
         <div class="modal" id="modal-sign-in">
