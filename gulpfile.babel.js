@@ -14,6 +14,7 @@ const autoprefixer = require('gulp-autoprefixer'),
     sass = require('gulp-sass');
 
 const bemValidator = require('gulp-html-bem-validator'),
+    htmlMin = require('gulp-htmlmin'),
     htmlValidator = require('gulp-w3c-html-validator'),
     htmlReplace = require('gulp-html-replace');
 
@@ -23,7 +24,10 @@ const imagemin = require('gulp-imagemin'),
     newer = require('gulp-newer'),
     svgstore = require('gulp-svgstore'),
     webp = require('gulp-webp'),
-    webpHTML = require('gulp-webp-html');
+    webpHTML = require('gulp-webp-in-html');
+
+const ttf2woff = require('gulp-ttf2woff'),
+    ttf2woff2 = require('gulp-ttf2woff2');
 
 const buildFolder = 'build/';
 const srcFolder = 'src/';
@@ -42,7 +46,7 @@ const paths = {
         js: srcFolder + 'js/',
         img: srcFolder + 'img/src/**/*.{jpg,jpeg,png,svg,webp}',
         icons: srcFolder + 'img/src/icons/**/*.svg',
-        fonts: srcFolder + 'fonts/*.{woff, woff2}'
+        fonts: srcFolder + 'fonts/*.{woff,woff2}'
     },
     watch: {
         html: srcFolder + 'html/**/*.html',
@@ -50,7 +54,7 @@ const paths = {
         js: srcFolder + 'js/**/*.js',
         img: srcFolder + 'img/src/**/*.{jpg,jpeg,png,svg,webp}'
     },
-    clean: './' + buildFolder + '/'
+    clean: './' + buildFolder
 }
 
 const isBuild = process.env.NODE_ENV === 'build';
@@ -72,56 +76,46 @@ function styles() {
             overrideBrowserslist: ['last 10 versions'],
             grid: true
         }),
-        gulpIf(
-            isBuild,
-            dest(paths.build.css),
-            dest(paths.src.css, { sourcemaps: true })
-        ),
-        gulpIf(
-            isBuild,
-            cleancss({
-                level: {
-                    1: {
-                        all: true,
-                        normalizeUrls: false
-                    },
-                    2: {
-                        restructureRules: true
+        gulpIf(isBuild,
+            multipipe(
+                rename({ extname: `.min-v${version}.css` }),
+                cleancss({
+                    level: {
+                        1: {
+                            all: true,
+                            normalizeUrls: false
+                        },
+                        2: {
+                            restructureRules: true
+                        }
                     }
-                }
-            })
-        ),
-        gulpIf(
-            isBuild,
-            rename({ extname: `.min.css?v=${version}` })
-        ),
-        gulpIf(
-            isBuild,
-            dest(paths.build.css)
-        ),
-        gulpIf(
-            !isBuild,
-            browserSync.stream()
+                }),
+                dest(paths.build.css)
+            ),
+            multipipe(
+                dest(paths.src.css, { sourcemaps: true }),
+                browserSync.stream()
+            )
         )
-    ).
-    on('error', notify.onError(function(err) {
-        return {
-            title: 'Style',
-            message: err.message
-        }
-    }))
+    )
 }
 
 function scripts() {
     return multipipe(
-        src(`${paths.src.js}scripts.js`),
+        src(`${paths.src.js}app.js`),
         fileInclude(),
-        rename('scripts.min.js'),
-        gulpIf(isBuild, dest(paths.build.js), dest(paths.src.js)),
-        gulpIf(isBuild, terser()),
-        gulpIf(isBuild, rename(`scripts.min.js?v=${version}`)),
-        gulpIf(isBuild, dest(paths.build.js)),
-        gulpIf(!isBuild, browserSync.stream())
+        gulpIf(isBuild,
+            multipipe(
+                rename(`scripts.min-v${version}.js`),
+                terser(),
+                dest(paths.build.js)
+            ),
+            multipipe(
+                rename('scripts.js'),
+                dest(paths.src.js),
+                browserSync.stream()
+            )
+        )
     )
 }
 
@@ -133,64 +127,77 @@ function html() {
         dest(`${srcFolder}`),
         htmlValidator(),
         /*bemValidator(),*/
-        gulpIf(
-            isBuild,
-            htmlReplace({
-                'css': `css/style.min.css?v=${version}`,
-                'js': `js/scripts.min.js?v=${version}`,
-            })
-        ),
-        gulpIf(
-            isBuild,
-            dest(paths.build.html)
+        gulpIf(isBuild,
+            multipipe(
+                htmlReplace({
+                    'css': `css/style.min-v${version}.css`,
+                    'js': `js/scripts.min-v${version}.js`,
+                }),
+                htmlMin({
+                    collapseWhitespace: true,
+                    collapseInlineTagWhitespace: true,
+                    removeComments: true
+                }),
+                dest(paths.build.html)
+            )
         )
-        .on('error',
-            notify.onError(function(err) {
-                return {
-                    title: 'HTML',
-                    message: err.message
-                }
-            })
-        )
-    )
-}
-
-function svgSprite() {
-    return multipipe(
-        src(`${srcFolder}img/dist/icons/**/*.svg`),
-        svgstore({
-            inlineSvg: true
-        }),
-        gulpIf(
-            isBuild,
-            dest(paths.build.img),
-            dest(`${srcFolder}img/dist/`)
-        ),
-
     )
 }
 
 function images() {
     return multipipe(
         src(paths.src.img),
-        newer(`${srcFolder}img/dist/`),
-        webp({ quality: 70 }),
-        gulpIf(
-            isBuild,
-            dest(paths.build.img),
-            dest(`${srcFolder}img/dist/`)
-        ),
-        src(paths.src.img),
-        imagemin({
-            progressive: true,
-            interlaced: true,
-            optimizationLevel: 3
-        }),
-        gulpIf(
-            isBuild,
-            dest(paths.build.img),
-            dest(`${srcFolder}img/dist/`)
+        gulpIf(isBuild,
+            multipipe(
+                webp({ quality: 70 }),
+                dest(paths.build.img),
+                src(paths.src.img),
+                imagemin({
+                    progressive: true,
+                    interlaced: true,
+                    optimizationLevel: 3
+                }),
+                dest(paths.build.img)
+            ),
+            multipipe(
+                newer(`${srcFolder}img/`),
+                webp({ quality: 70 }),
+                dest(`${srcFolder}img/`),
+                src(paths.src.img),
+                imagemin({
+                    progressive: true,
+                    interlaced: true,
+                    optimizationLevel: 3
+                }),
+                dest(`${srcFolder}img/`)
+            )
         )
+    )
+}
+
+function svgSprite() {
+    return multipipe(
+        src(`${srcFolder}img/src/icons/**/*.svg`),
+        svgstore({
+            inlineSvg: true
+        }),
+        dest(`${srcFolder}img/`)
+    )
+}
+
+function fonts() {
+    return multipipe(
+        src(paths.src.fonts),
+        /*        ttf2woff(),
+                ttf2woff2(),*/
+        dest(paths.build.fonts)
+    )
+}
+
+function copy() {
+    return multipipe(
+        src(`${srcFolder}*{.ico,.svg,.png,.json}`),
+        dest(buildFolder)
     )
 }
 
@@ -202,7 +209,7 @@ function startWatch() {
     watch(paths.watch.html).on('change', browserSync.reload);
     watch(paths.watch.scss, styles);
     watch(paths.watch.html, html);
-    watch([paths.watch.js, `!${paths.src.js}scripts.min.js`], scripts);
+    watch([paths.watch.js, `!${paths.src.js}scripts.js`], scripts);
     watch(paths.watch.img, images);
 }
 
@@ -215,4 +222,4 @@ exports.images = images;
 exports.clean = clean;
 
 exports.default = parallel(html, styles, scripts, images, startWatch, server);
-exports.build = series(clean, html, styles, scripts, images);
+exports.build = series(clean, styles, fonts, scripts, images, svgSprite, copy, html);
