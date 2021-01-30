@@ -11,7 +11,7 @@ const browserSync = require('browser-sync').create(),
 
 const autoprefixer = require('gulp-autoprefixer'),
     cleancss = require('gulp-clean-css'),
-    sass = require('gulp-sass');
+    sass = require('gulp-dart-sass');
 
 const bemValidator = require('gulp-html-bem-validator'),
     htmlMin = require('gulp-htmlmin'),
@@ -28,6 +28,8 @@ const imagemin = require('gulp-imagemin'),
 
 const ttf2woff = require('gulp-ttf2woff'),
     ttf2woff2 = require('gulp-ttf2woff2');
+
+const FONTS = '<link rel="preload" href="fonts/PTSansNarrow-Bold.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="fonts/PTSansNarrow-Regular.woff2" as="font" type="font/woff2" crossorigin>';
 
 const buildFolder = 'build/';
 const srcFolder = 'src/';
@@ -132,6 +134,8 @@ function html() {
                 htmlReplace({
                     'css': `css/style.min-v${version}.css`,
                     'js': `js/scripts.min-v${version}.js`,
+                    'fonts': FONTS,
+
                 }),
                 htmlMin({
                     collapseWhitespace: true,
