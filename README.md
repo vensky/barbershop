@@ -1,1 +1,1 @@
-Учебный проект для htmlacademy.ru
+Сайт для барбершопа "Borodinski" 
