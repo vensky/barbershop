@@ -52,7 +52,6 @@
     "imask": "^6.0.5",
     "lint-staged": "^10.2.11",
     "multipipe": "^4.0.0",
-    "prettier": "^2.0.5",
     "stylelint-config-prettier": "^8.0.2",
     "stylelint-config-recommended": "^3.0.0",
     "stylelint-order": "^4.1.0"

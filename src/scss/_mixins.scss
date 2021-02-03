@@ -1,36 +1,36 @@
 @mixin no-btn {
-    background: transparent;
-    font: inherit;
-    border: 0;
-    display: block;
-    margin: 0;
-    padding: 0;
-    outline: none;
-    text-decoration: none;
-    cursor: pointer;
+  background: transparent;
+  font: inherit;
+  border: 0;
+  display: block;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 @mixin no-list {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 @mixin fieldset {
-    border: 0;
-    margin: 0;
-    padding: 0;
+  border: 0;
+  margin: 0;
+  padding: 0;
 }
 
 @mixin visuallyhidden {
-    border: 0;
-    clip: rect(0 0 0 0);
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    padding: 0;
-    position: absolute;
-    width: 1px;
-    white-space: nowrap;
-    opacity: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  white-space: nowrap;
+  opacity: 0;
 }

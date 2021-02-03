@@ -1,105 +1,99 @@
 .overlay {
-    background: rgba(0, 0, 0, 0.75);
-    opacity: 0;
-    visibility: hidden;
+  background: rgba(0, 0, 0, 0.75);
+  opacity: 0;
+  visibility: hidden;
 
-    position: fixed;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    z-index: 10;
-    transition: opacity 0.3s ease-out 0s,
-        visibility 0.3s ease-out 0s;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 10;
+  transition: opacity 0.3s ease-out 0s, visibility 0.3s ease-out 0s;
 
-    &--active {
-        opacity: 1;
-        visibility: visible;
-    }
+  &--active {
+    opacity: 1;
+    visibility: visible;
+  }
 }
 
 .modal {
-    background: #f7f4f1 url("../img/bg-section.png");
-    position: fixed;
-    max-width: 460px;
-    width: 460px;
-    padding: 55px 80px;
-    top: 80px;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 11;
-    transition: opacity 0.3s ease-out 0s,
-        visibility 0.3s ease-out 0s;
-    opacity: 0;
-    visibility: hidden;
+  background: #f7f4f1 url("../img/bg-section.png");
+  position: fixed;
+  max-width: 460px;
+  width: 460px;
+  padding: 55px 80px;
+  top: 80px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 11;
+  transition: opacity 0.3s ease-out 0s, visibility 0.3s ease-out 0s;
+  opacity: 0;
+  visibility: hidden;
 
-    &--active {
-        opacity: 1;
-        visibility: visible;
+  &--active {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  @media (max-width: 500px), (max-height: 500px) {
+    padding: 20px 30px;
+    top: 0;
+    position: absolute;
+    min-height: 100%;
+    width: 100%;
+  }
+
+  &__container {
+    max-width: 300px;
+  }
+
+  &__title {
+    @media (max-width: 500px), (max-height: 500px) {
+      margin-bottom: 0px;
+    }
+  }
+
+  &__group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media (max-width: 400px) {
+      flex-direction: column;
+      align-items: start;
     }
 
-    @media (max-width: 500px),
-    (max-height: 500px) {
-        padding: 20px 30px;
-        top: 0;
-        position: absolute;
-        min-height: 100%;
-        width: 100%;
-    }
-
-    &__container {
-        max-width: 300px;
-    }
-
-
-    &__title {
-        @media (max-width: 500px), (max-height: 500px) {
-            margin-bottom: 0px;
-        }
-
-        ;
-    }
-
-    &__group {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-
-        @media (max-width: 400px) {
-            flex-direction: column;
-            align-items: start;
-        }
-
-        .form__checkbox {
-            @media (max-width: 400px) {
-                margin-bottom: 20px;
-            }
-        }
-
-        .form__link {
-            @media (max-width: 400px) {
-                margin: 0 auto;
-            }
-        }
-    }
-
-    &__field {
+    .form__checkbox {
+      @media (max-width: 400px) {
         margin-bottom: 20px;
-        width: 100%;
+      }
     }
 
-    &__btn {
-        width: 100%;
-        margin: 20px auto;
+    .form__link {
+      @media (max-width: 400px) {
+        margin: 0 auto;
+      }
     }
+  }
 
-    &__btn-close {
-        position: absolute;
-        top: 20px;
-        right: 15px;
-    }
+  &__field {
+    margin-bottom: 20px;
+    width: 100%;
+  }
 
-    &__link {
-        margin: 0 auto 12px;
-    }
+  &__btn {
+    width: 100%;
+    margin: 20px auto;
+  }
+
+  &__btn-close {
+    position: absolute;
+    top: 20px;
+    right: 15px;
+  }
+
+  &__link {
+    margin: 0 auto 12px;
+  }
 }

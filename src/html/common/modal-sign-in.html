@@ -1,20 +1,44 @@
 <div class="modal" id="modal-sign-in">
-    <div class="container">
-        <h2 class="title modal__title">Личный кабинет</h2>
-        <form class="form" method="post">
-            <p>Введите, пожалуйста, свой логин и пароль</p>
-            <input class="form__field modal__field form__field--login" type="text" name="sign-in-login" placeholder="Логин">
-            <input class="form__field modal__field form__field--password" type="password" name="sign-in-password" placeholder="Пароль">
-            <fieldset class="form__group modal__group">
-                <div class="form__checkbox">
-                    <input id="remember-me" type="checkbox" name="sign-in-remember">
-                    <label class="form__label" for="remember-me">Запомнить меня</label>
-                </div>
-                <button class="form__link js-modalOpen" type="button" data-modal="modal-repair">Я забыл пароль!</button>
-            </fieldset>
-            <button class="btn modal__btn" type="button">Войти</button>
-            <button class="form__link modal__link js-modalOpen" type="button" data-modal="modal-sign-up">Зарегистрироваться</button>
-        </form>
-    </div>
-    <button class="btn-close modal__btn-close js-modalClose" type="button"><span>Закрыть</span></button>
+  <div class="container">
+    <h2 class="title modal__title">Личный кабинет</h2>
+    <form class="form" method="post">
+      <p>Введите, пожалуйста, свой логин и пароль</p>
+      <input
+        class="form__field modal__field form__field--login"
+        type="text"
+        name="sign-in-login"
+        placeholder="Логин"
+      />
+      <input
+        class="form__field modal__field form__field--password"
+        type="password"
+        name="sign-in-password"
+        placeholder="Пароль"
+      />
+      <fieldset class="form__group modal__group">
+        <div class="form__checkbox">
+          <input id="remember-me" type="checkbox" name="sign-in-remember" />
+          <label class="form__label" for="remember-me">Запомнить меня</label>
+        </div>
+        <button
+          class="form__link js-modalOpen"
+          type="button"
+          data-modal="modal-repair"
+        >
+          Я забыл пароль!
+        </button>
+      </fieldset>
+      <button class="btn modal__btn" type="button">Войти</button>
+      <button
+        class="form__link modal__link js-modalOpen"
+        type="button"
+        data-modal="modal-sign-up"
+      >
+        Зарегистрироваться
+      </button>
+    </form>
+  </div>
+  <button class="btn-close modal__btn-close js-modalClose" type="button">
+    <span>Закрыть</span>
+  </button>
 </div>

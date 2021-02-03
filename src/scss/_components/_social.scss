@@ -1,43 +1,43 @@
 .social {
-    /*@media (max-width: 900px) {*/
-    margin-bottom: 40px;
-    /*   }*/
+  /*@media (max-width: 900px) {*/
+  margin-bottom: 40px;
+  /*   }*/
 
-    &__title {
-        font-size: 14px;
-        margin: 0 0 8px 0;
-        text-align: center;
+  &__title {
+    font-size: 14px;
+    margin: 0 0 8px 0;
+    text-align: center;
+  }
+
+  &__btns {
+    @include no-list;
+    display: flex;
+    justify-content: space-between;
+    width: 144px;
+  }
+
+  &__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0;
+    width: 44px;
+
+    &:hover {
+      .social__icon {
+        fill: #000;
+      }
     }
+  }
 
-    &__btns {
-        @include no-list;
-        display: flex;
-        justify-content: space-between;
-        width: 144px;
+  &__icon {
+    fill: #fff;
+    height: 16px;
+    width: auto;
+    transition: fill 0.25s ease-out 0s;
+
+    &--vkontakte {
+      height: 14px;
     }
-
-    &__btn {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: 0;
-        width: 44px;
-
-        &:hover {
-            .social__icon {
-                fill: #000;
-            }
-        }
-    }
-
-    &__icon {
-        fill: #fff;
-        height: 16px;
-        width: auto;
-        transition: fill 0.25s ease-out 0s;
-
-        &--vkontakte {
-            height: 14px;
-        }
-    }
+  }
 }

@@ -1,125 +1,278 @@
 <!DOCTYPE html>
 <html lang="ru" prefix="og: http://ogp.me/ns#">
-@@include('common/head.html')
+    @@include('common/head.html')
 
-<body>
-    @@include('common/svg-sprite.html')
-    <div class="wrapper">
-        @@include('common/header.html')
-        <main>
-            <div class="container">
-                <section class="logo">
-                    <h1 class="logo__inner">
-                        <span class="visuallyhidden">Barbershop Borodinski</span>
-                        <img class="logo__img" src="img/logo.png" alt="Логотип «Barbershop Borodinski»">
-                    </h1>
-                </section>
-                <section class="features">
-                    <ul class="features__list">
-                        <li class="features__item">
-                            <h2 class="features__title">Быстро</h2>
-                            <p>Мы&nbsp;делаем свою работу быстро! Два часа пролетят незаметно и&nbsp;вы&nbsp;&mdash; счастливый обладатель стильной стрижки-минутки!</p>
-                        </li>
-                        <li class="features__item">
-                            <h2 class="features__title">Круто</h2>
-                            <p>Забудьте, как вы&nbsp;стриглись раньше. Мы&nbsp;сделаем из&nbsp;вас звезду футбола или кино! Во&nbsp;всяком случае внешне.</p>
-                        </li>
-                        <li class="features__item features__item_last">
-                            <h2 class="features__title">Дорого</h2>
-                            <p>Наши мастера&nbsp;&mdash; профессионалы своего дела и&nbsp;не&nbsp;могут стоить дешево. К&nbsp;тому&nbsp;же, разве цена не&nbsp;дает определенный статус?</p>
-                        </li>
-                    </ul>
-                </section>
-                <div class="section-wrapper">
-                    <section class="news-section section-wrapper__col">
-                        <h2 class="title">Новости</h2>
-                        <ul class="news-section__list">
-                            <li>
-                                <a class="news-section__title" href="news.html">Мы наконец завезли Ягермейстер! Теперь вы можете пропустить стаканчик во время стрижки</a>
-                                <time datetime="2020-09-25">25 сентября</time>
+    <body>
+        @@include('common/svg-sprite.html')
+        <div class="wrapper">
+            @@include('common/header.html')
+            <main>
+                <div class="container">
+                    <section class="logo">
+                        <h1 class="logo__inner">
+                            kbcns
+                            <span class="visuallyhidden"
+                                >Barbershop Borodinski</span
+                            >
+                            <img
+                                class="logo__img"
+                                src="img/logo.png"
+                                alt="Логотип «Barbershop Borodinski»"
+                            />
+                        </h1>
+                    </section>
+                    <section class="features">
+                        <ul class="features__list">
+                            <li class="features__item">
+                                <h2 class="features__title">Быстро</h2>
+                                <p>
+                                    Мы&nbsp;делаем свою работу быстро! Два часа
+                                    пролетят незаметно и&nbsp;вы&nbsp;&mdash;
+                                    счастливый обладатель стильной
+                                    стрижки-минутки!
+                                </p>
                             </li>
-                            <li>
-                                <a class="news-section__title" href="news.html">В нашей команде пополнение, Борис «Бритва» Стригунец, обладатель множества титулов и наград пополнил наши стройные ряды </a>
-                                <time datetime="2020-09-19">19 сентября</time>
+                            <li class="features__item">
+                                <h2 class="features__title">Круто</h2>
+                                <p>
+                                    Забудьте, как вы&nbsp;стриглись раньше.
+                                    Мы&nbsp;сделаем из&nbsp;вас звезду футбола
+                                    или кино! Во&nbsp;всяком случае внешне.
+                                </p>
+                            </li>
+                            <li class="features__item features__item_last">
+                                <h2 class="features__title">Дорого</h2>
+                                <p>
+                                    Наши мастера&nbsp;&mdash; профессионалы
+                                    своего дела и&nbsp;не&nbsp;могут стоить
+                                    дешево. К&nbsp;тому&nbsp;же, разве цена
+                                    не&nbsp;дает определенный статус?
+                                </p>
                             </li>
                         </ul>
-                        <a class="btn news-section__btn section-wrapper__btn" href="news.html">Все новости</a>
                     </section>
-                    <section class="gallery-section section-wrapper__col">
-                        <h2 class="title">Фотогалерея</h2>
-                        <div class="gallery-section__swiper-wrapper">
-                            <div class="swiper-container">
-                                <div class="swiper-wrapper">
-                                    <div class="gallery-section__slider swiper-slide">
-                                        <img class="gallery-section__slide" src="img/assets/gallery__slide_1.jpg" alt="Наш интерьер - кресло">
-                                    </div>
-                                    <div class="gallery-section__slider swiper-slide">
-                                        <img class="gallery-section__slide" src="img/assets/img__01.jpg" alt="Товар">
-                                    </div>
-                                    <div class="gallery-section__slider swiper-slide">
-                                        <img class="gallery-section__slide" src="img/assets/img__02.jpg" alt="Товар">
+                    <div class="section-wrapper">
+                        <section class="news-section section-wrapper__col">
+                            <h2 class="title">Новости</h2>
+                            <ul class="news-section__list">
+                                <li>
+                                    <a
+                                        class="news-section__title"
+                                        href="news.html"
+                                        >Мы наконец завезли Ягермейстер! Теперь
+                                        вы можете пропустить стаканчик во время
+                                        стрижки</a
+                                    >
+                                    <time datetime="2020-09-25"
+                                        >25 сентября</time
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        class="news-section__title"
+                                        href="news.html"
+                                        >В нашей команде пополнение, Борис
+                                        «Бритва» Стригунец, обладатель множества
+                                        титулов и наград пополнил наши стройные
+                                        ряды
+                                    </a>
+                                    <time datetime="2020-09-19"
+                                        >19 сентября</time
+                                    >
+                                </li>
+                            </ul>
+                            <a
+                                class="btn news-section__btn section-wrapper__btn"
+                                href="news.html"
+                                >Все новости</a
+                            >
+                        </section>
+                        <section class="gallery-section section-wrapper__col">
+                            <h2 class="title">Фотогалерея</h2>
+                            <div class="gallery-section__swiper-wrapper">
+                                <div class="swiper-container">
+                                    <div class="swiper-wrapper">
+                                        <div
+                                            class="gallery-section__slider swiper-slide"
+                                        >
+                                            <img
+                                                class="gallery-section__slide"
+                                                src="img/assets/gallery__slide_1.jpg"
+                                                alt="Наш интерьер - кресло"
+                                            />
+                                        </div>
+                                        <div
+                                            class="gallery-section__slider swiper-slide"
+                                        >
+                                            <img
+                                                class="gallery-section__slide"
+                                                src="img/assets/img__01.jpg"
+                                                alt="Товар"
+                                            />
+                                        </div>
+                                        <div
+                                            class="gallery-section__slider swiper-slide"
+                                        >
+                                            <img
+                                                class="gallery-section__slide"
+                                                src="img/assets/img__02.jpg"
+                                                alt="Товар"
+                                            />
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="gallery-section__btns section-wrapper__btn">
-                            <a class="btn gallery-section__btn swiper-button-prev">Назад</a>
-                            <a class="btn gallery-section__btn swiper-button-next">Вперед</a>
-                        </div>
-                    </section>
+                            <div
+                                class="gallery-section__btns section-wrapper__btn"
+                            >
+                                <a
+                                    class="btn gallery-section__btn swiper-button-prev"
+                                    >Назад</a
+                                >
+                                <a
+                                    class="btn gallery-section__btn swiper-button-next"
+                                    >Вперед</a
+                                >
+                            </div>
+                        </section>
+                    </div>
+                    <div class="section-wrapper">
+                        <section
+                            class="contacts-section section-wrapper__col"
+                            itemscope
+                            itemtype="http://schema.org/HairSalon"
+                        >
+                            <h2 class="title">Контактная информация</h2>
+                            <div class="contacts-section__section">
+                                <h3
+                                    class="contacts-section__title"
+                                    itemprop="name"
+                                >
+                                    &laquo;Barbershop Borodinski&raquo;
+                                </h3>
+                                <ul
+                                    class="contacts-section__list"
+                                    itemprop="address"
+                                    itemscope
+                                    itemtype="http://schema.org/PostalAddress"
+                                >
+                                    <li>
+                                        Адрес:
+                                        <span itemprop="addressLocality"
+                                            >г.&nbsp;Москва</span
+                                        >,
+                                        <span itemprop="streetAddress"
+                                            >ул.&nbsp;Собаки Павлова,
+                                            д.&nbsp;13</span
+                                        >
+                                    </li>
+                                    <li>
+                                        Телефон:
+                                        <a
+                                            href="tel:+749566602666"
+                                            title="Позвонить"
+                                            ><span itemprop="telephone"
+                                                >+7 (495) 666-02-666</span
+                                            ></a
+                                        >
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="contacts-section__section">
+                                <p class="contacts-section__title">
+                                    Время работы:
+                                </p>
+                                <ul class="contacts-section__list">
+                                    <li>
+                                        <span itemprop="openingHours"
+                                            >Пн&nbsp;&mdash; Пт: с&nbsp;10:00
+                                            до&nbsp;22:00</span
+                                        >
+                                    </li>
+                                    <li>
+                                        <span itemprop="openingHours"
+                                            >Сб&nbsp;&mdash; Вс: с&nbsp;10:00
+                                            до&nbsp;19:00</span
+                                        >
+                                    </li>
+                                </ul>
+                            </div>
+                            <div
+                                class="contacts-section__btns section-wrapper__btn"
+                            >
+                                <a
+                                    class="btn contacts-section__btn"
+                                    href="contacts.html"
+                                    >Как проехать</a
+                                >
+                                <a
+                                    class="btn contacts-section__btn"
+                                    href="contacts.html#feedback"
+                                    >Обратная связь</a
+                                >
+                            </div>
+                        </section>
+                        <section class="booking-section section-wrapper__col">
+                            <h2 class="title">Записаться</h2>
+                            <p class="booking-info">
+                                Укажите желаемую дату и время и мы свяжемся с
+                                вами для подтверждения брони
+                            </p>
+                            <form
+                                class="form booking-section__form"
+                                method="post"
+                            >
+                                <fieldset
+                                    class="form__group booking-section__group"
+                                >
+                                    <input
+                                        class="form__field booking-section__field js-dateMask"
+                                        type="text"
+                                        name="booking-date"
+                                        placeholder="Дата"
+                                    />
+                                    <input
+                                        class="form__field booking-section__field js-timeMask"
+                                        type="text"
+                                        name="booking-time"
+                                        placeholder="Время"
+                                    />
+                                </fieldset>
+                                <fieldset
+                                    class="form__group booking-section__group"
+                                >
+                                    <input
+                                        class="form__field booking-section__field"
+                                        type="text"
+                                        name="booking-name"
+                                        placeholder="Ваше имя"
+                                    />
+                                    <input
+                                        class="form__field booking-section__field js-telMask"
+                                        type="tel"
+                                        name="booking-tel"
+                                        placeholder="Телефон"
+                                    />
+                                </fieldset>
+                                <button
+                                    class="btn booking-section__btn section-wrapper__btn"
+                                    type="button"
+                                >
+                                    Отправить
+                                </button>
+                            </form>
+                        </section>
+                    </div>
                 </div>
-                <div class="section-wrapper">
-                    <section class="contacts-section section-wrapper__col" itemscope itemtype="http://schema.org/HairSalon">
-                        <h2 class="title">Контактная информация</h2>
-                        <div class="contacts-section__section">
-                            <h3 class="contacts-section__title" itemprop="name">&laquo;Barbershop Borodinski&raquo;</h3>
-                            <ul class="contacts-section__list" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
-                                <li>Адрес:
-                                    <span itemprop="addressLocality">г.&nbsp;Москва</span>,
-                                    <span itemprop="streetAddress">ул.&nbsp;Собаки Павлова, д.&nbsp;13</span>
-                                </li>
-                                <li>Телефон: <a href="tel:+749566602666" title="Позвонить"><span itemprop="telephone">+7 (495) 666-02-666</span></a></li>
-                            </ul>
-                        </div>
-                        <div class="contacts-section__section">
-                            <p class="contacts-section__title">Время работы:</p>
-                            <ul class="contacts-section__list">
-                                <li><span itemprop="openingHours">Пн&nbsp;&mdash; Пт: с&nbsp;10:00 до&nbsp;22:00</span></li>
-                                <li><span itemprop="openingHours">Сб&nbsp;&mdash; Вс: с&nbsp;10:00 до&nbsp;19:00</span></li>
-                            </ul>
-                        </div>
-                        <div class="contacts-section__btns section-wrapper__btn">
-                            <a class="btn contacts-section__btn" href="contacts.html">Как проехать</a>
-                            <a class="btn contacts-section__btn" href="contacts.html#feedback">Обратная связь</a>
-                        </div>
-                    </section>
-                    <section class="booking-section section-wrapper__col">
-                        <h2 class="title">Записаться</h2>
-                        <p class="booking-info">Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони</p>
-                        <form class="form booking-section__form" method="post">
-                            <fieldset class="form__group booking-section__group">
-                                <input class="form__field booking-section__field js-dateMask" type="text" name="booking-date" placeholder="Дата">
-                                <input class="form__field booking-section__field js-timeMask" type="text" name="booking-time" placeholder="Время">
-                            </fieldset>
-                            <fieldset class="form__group booking-section__group">
-                                <input class="form__field booking-section__field" type="text" name="booking-name" placeholder="Ваше имя">
-                                <input class="form__field booking-section__field js-telMask" type="tel" name="booking-tel" placeholder="Телефон">
-                            </fieldset>
-                            <button class="btn booking-section__btn section-wrapper__btn" type="button">Отправить</button>
-                        </form>
-                    </section>
-                </div>
-            </div>
-        </main>
-        @@include('common/footer.html')
-    </div>
-    <div class="overlay"></div>
-    @@include('common/modal-sign-in.html')
-    @@include('common/modal-sign-up.html')
-    @@include('common/modal-repair.html')
-    <!-- build:js -->
-    <script src="js/scripts.js"></script>
-    <!-- endbuild -->
-</body>
-
+            </main>
+            @@include('common/footer.html')
+        </div>
+        <div class="overlay"></div>
+        @@include('common/modal-sign-in.html')
+        @@include('common/modal-sign-up.html')
+        @@include('common/modal-repair.html')
+        <!-- build:js -->
+        <script src="js/scripts.js"></script>
+        <!-- endbuild -->
+    </body>
 </html>

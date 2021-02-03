@@ -1,11 +1,12 @@
 {
-    "icons": [{
-            "src": "google-touch-icon-192.png",
-            "sizes": "192x192"
-        },
-        {
-            "src": "google-touch-icon-512.png",
-            "sizes": "512x512"
-        }
-    ]
+  "icons": [
+    {
+      "src": "google-touch-icon-192.png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "google-touch-icon-512.png",
+      "sizes": "512x512"
+    }
+  ]
 }

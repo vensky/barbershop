@@ -1,20 +1,20 @@
 .footer {
-    padding: 62px 0 60px;
-    background: #232323 url("../img/bg-footer.png");
-    color: #fff;
-    margin-top: auto;
+  padding: 62px 0 60px;
+  background: #232323 url("../img/bg-footer.png");
+  color: #fff;
+  margin-top: auto;
 
-    &__container {
-        display: flex;
-        justify-content: space-between;
+  &__container {
+    display: flex;
+    justify-content: space-between;
 
-        @media (max-width: 900px) {
-            align-items: center;
-            flex-direction: column;
-        }
+    @media (max-width: 900px) {
+      align-items: center;
+      flex-direction: column;
     }
+  }
 
-    &__contacts-section {
-        text-align: center;
-    }
+  &__contacts-section {
+    text-align: center;
+  }
 }

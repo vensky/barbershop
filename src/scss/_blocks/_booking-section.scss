@@ -1,41 +1,41 @@
 .booking-section {
-    max-width: 298px;
+  max-width: 298px;
+
+  @media (max-width: 900px) {
+    max-width: 480px;
+  }
+
+  &__form {
+    display: flex;
+    flex-flow: column nowrap;
+    flex: auto;
+  }
+
+  &__group {
+    display: flex;
+    justify-content: space-between;
+    /* margin: 20px 0;*/
+
+    @media (max-width: 480px) {
+      flex-direction: column;
+    }
+  }
+
+  &__field {
+    margin-bottom: 20px;
 
     @media (max-width: 900px) {
-        max-width: 480px;
+      width: 48%;
     }
 
-    &__form {
-        display: flex;
-        flex-flow: column nowrap;
-        flex: auto;
+    @media (max-width: 480px) {
+      flex-direction: column;
+      width: 100%;
     }
+  }
 
-    &__group {
-        display: flex;
-        justify-content: space-between;
-       /* margin: 20px 0;*/
-
-        @media (max-width: 480px) {
-            flex-direction: column;
-        }
-    }
-
-    &__field {
-        margin-bottom: 20px;
-
-        @media (max-width: 900px) {
-            width: 48%;
-        }
-
-        @media (max-width: 480px) {
-            flex-direction: column;
-            width: 100%;
-        }
-    }
-
-    &__btn {
-        margin-top: auto;
-        width: 100%;
-    }
+  &__btn {
+    margin-top: auto;
+    width: 100%;
+  }
 }

@@ -1,32 +1,32 @@
 .sign-in {
-    margin-left: auto;
+  margin-left: auto;
 
-    &__btn {
-        @include no-btn;
-        color: #fff;
-        text-transform: uppercase;
-        padding: 27px 0 27px 30px;
-        position: relative;
+  &__btn {
+    @include no-btn;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 27px 0 27px 30px;
+    position: relative;
 
-        &:hover {
-            .sign-in__icon {
-                transform: translate(10px, -50%);
-            }
-        }
+    &:hover {
+      .sign-in__icon {
+        transform: translate(10px, -50%);
+      }
     }
+  }
 
-    &__icon {
-        position: absolute;
-        top: 50%;
-        left: -10px;
-        transform: translate(0, -50%);
-        transition: transform 0.25s ease-out 0s;
-        display: flex;
-        align-items: center;
+  &__icon {
+    position: absolute;
+    top: 50%;
+    left: -10px;
+    transform: translate(0, -50%);
+    transition: transform 0.25s ease-out 0s;
+    display: flex;
+    align-items: center;
 
-        svg {
-            width: 22px;
-            fill: #fff;
-        }
+    svg {
+      width: 22px;
+      fill: #fff;
     }
+  }
 }
