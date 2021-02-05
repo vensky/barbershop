@@ -123,8 +123,8 @@ function html() {
     fileInclude(),
     webpHTML(),
     dest(`${srcFolder}`),
-    htmlValidator(),
-    bemValidator(),
+/*    htmlValidator(),
+    bemValidator(),*/
     gulpIf(
       isBuild,
       multipipe(

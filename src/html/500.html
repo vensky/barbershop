@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ru" prefix="og: http://ogp.me/ns#">
+    @@include('common/head.html')
+
+    <body>
+        @@include('common/svg-sprite.html')
+        <div class="wrapper">
+            @@include('common/header.html')
+            <main>
+                <div class="container">
+                    <h1>Ошибка 404. Нет такой страницы</h1>
+                </div>
+            </main>
+            @@include('common/footer.html')
+        </div>
+        <div class="overlay"></div>
+        @@include('common/modal-sign-in.html')
+        @@include('common/modal-sign-up.html')
+        @@include('common/modal-repair.html')
+        <!-- build:js -->
+        <script src="js/scripts.js"></script>
+        <!-- endbuild -->
+    </body>
+</html>

@@ -10,7 +10,7 @@
     padding: 0 10px;
     border: 2px solid #000;
     text-transform: uppercase;
-    font: bold 14px "PT Sans Narrow", sans-serif;
+    font: inherit;
 
     &::placeholder {
       color: #000;
