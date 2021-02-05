@@ -42,5 +42,4 @@ bower_components
 
 # Project ignore files
 build
-src/css/style.min.js
-src/js/scripts.min.js
+

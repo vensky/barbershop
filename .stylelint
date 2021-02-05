@@ -1,0 +1,7 @@
+{
+  "rules": {
+    "declaration-block-no-imortant": true,
+    "property-blacklist": ["flex"],
+    "unit-blacklist": ["em", "rem"],
+  },
+}

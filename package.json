@@ -52,6 +52,8 @@
     "imask": "^6.0.5",
     "lint-staged": "^10.2.11",
     "multipipe": "^4.0.0",
+    "prettier": "^2.2.1",
+    "stylelint": "^13.9.0",
     "stylelint-config-prettier": "^8.0.2",
     "stylelint-config-recommended": "^3.0.0",
     "stylelint-order": "^4.1.0"
@@ -59,5 +61,18 @@
   "dependencies": {
     "sass": "^1.32.5",
     "swiper": "^6.4.5"
-  }
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "linters": {
+      "*.css": [
+        "prettier --write",
+        "stylelint --fix --config ./.stylelintrc",
+        "git add"
+      ]
+    }
 }
